@@ -1,0 +1,45 @@
+.top-menu {
+    background-color: #252627;
+}
+
+.top-menu .nav-item {
+    padding: 0;
+}
+
+/* bootstrap extends */
+
+#left-menu .nav-link {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #3A3B3B;
+    padding-bottom: 1px;
+}
+
+.nav-tabs .nav-item {
+    border-left: transparent;
+    border-right: transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.nav-tabs .nav-item:not(:first-child, :last-child) {
+    border-left: 1px solid rgba(120, 120, 120, 0.8);
+    border-right: 1px solid rgba(120, 120, 120, 0.8);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+    border-color: transparent;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+    height: 100%;
+    color: #ffffff;
+    background-color: #3A3B3B;
+    border-color: transparent;
+}
