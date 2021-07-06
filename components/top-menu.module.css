@@ -1,17 +1,12 @@
-.top-menu {
+.topMenu {
     background-color: #252627;
 }
 
-.top-menu .nav-item {
+.topMenu .nav-item {
     padding: 0;
 }
 
 /* bootstrap extends */
-
-#left-menu .nav-link {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-}
 
 .nav-tabs {
     border-bottom: 1px solid #3A3B3B;
