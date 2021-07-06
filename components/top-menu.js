@@ -1,11 +1,27 @@
 import Link from 'next/link'
 import styles from '/components/top-menu.module.css'
+import { Nav, Tabs, Tab, Sonnet } from 'react-bootstrap'
+import MainContent from './main-content'
 
 // トップメニューのレイアウトを含むコンポーネント
 
 export default function TopMenu() {
+	
 	return (
 
+		<Tabs defaultActiveKey="frontend" id="uncontrolled-tab-example">
+			<Tab eventKey="frontend" title="Frontend Coding">
+				<MainContent />
+			</Tab>
+			<Tab eventKey="php" title="PHP">
+				<MainContent />
+			</Tab>
+			<Tab eventKey="beatmaking" title="Beat Making">
+				<MainContent />
+			</Tab>
+		</Tabs>
+
+/*
 		<nav className={styles.TopMenu}>
 			<ul className="nav nav-tabs" id="topMenuTab" role="tablist">
 				
@@ -28,6 +44,6 @@ export default function TopMenu() {
 				</li>
 			</ul>
 		</nav>
-
+*/
 	)
 }
