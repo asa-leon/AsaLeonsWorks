@@ -2,6 +2,7 @@ import Link from 'next/link'
 import styles from '/components/top-menu.module.css'
 import { Nav, Tabs, Tab, Sonnet } from 'react-bootstrap'
 import MainContent from './main-content'
+import { createContext } from 'react'
 
 // トップメニューのレイアウトを含むコンポーネント
 
