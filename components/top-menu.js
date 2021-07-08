@@ -2,23 +2,25 @@ import Link from 'next/link'
 import styles from '/components/top-menu.module.css'
 import { Nav, Tabs, Tab, Sonnet } from 'react-bootstrap'
 import MainContent from './main-content'
-import { createContext } from 'react'
 
 // トップメニューのレイアウトを含むコンポーネント
 
 export default function TopMenu() {
+
+	// main-content制御用の配列
+	const titleList = ['frontend', 'php', 'beatmaking']
 	
 	return (
 
 		<Tabs defaultActiveKey="frontend" id="uncontrolled-tab-example">
 			<Tab eventKey="frontend" title="Frontend Coding">
-				<MainContent />
+				<MainContent title={titleList[0]} />
 			</Tab>
 			<Tab eventKey="php" title="PHP">
-				<MainContent />
+				<MainContent title={titleList[1]} />
 			</Tab>
 			<Tab eventKey="beatmaking" title="Beat Making">
-				<MainContent />
+				<MainContent title={titleList[2]} />
 			</Tab>
 		</Tabs>
 
