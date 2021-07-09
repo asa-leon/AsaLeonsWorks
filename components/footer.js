@@ -13,9 +13,8 @@ export default function Footer() {
     return (
         <footer className={styles.footer}>
 			
-			<div className="container-fluid">
-				<Row>
-					<Col md={3}>
+				<Row className={styles.row}>
+					<Col lg={2} md={1}>
 					<DropdownButton
 						className={styles.dropdownMenuButton} 
 						as={ButtonGroup}
@@ -33,11 +32,11 @@ export default function Footer() {
 					</DropdownButton>
 					</Col>
 
-					<Col md={6} className={styles.contacts}>
-							<p className={"d-none d-lg-block"}>
+					<Col md={7} className={styles.contacts}>
+							<p className={"d-none d-md-block"}>
 								Contact() -&gt; [ E-Mail: <a href="mailto:#">"test@example.com"</a>, Soundcloud: "<a href="#">account information</a>" ]
 							</p>
-							<p className={"d-lg-none"}>
+							<p className={"d-none d-xs-block"}>
 							Contact() -&gt; [ <a href="mailto:#"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a>, <a href="#"><FontAwesomeIcon icon={faSoundcloud}></FontAwesomeIcon></a> ]
 							</p>
 							
@@ -48,7 +47,6 @@ export default function Footer() {
 					</Col>
 
 				</Row>
-			</div>
         </footer>
         
         
