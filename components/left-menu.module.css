@@ -1,0 +1,38 @@
+.toLeft {
+    padding-top: 15px;
+    background-color: #130024;
+}
+
+.leftMenuTitle {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.leftMenuTitle h1 {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.leftMenuTitle img {
+    width: 20px;
+    height: 20px;
+}
+
+.leftMenuNavItems {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.leftMenuNavItems img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 768px) {
+    .leftMenuTitle img,
+    .leftMenuNavItems img {
+        display: none;
+    }
+}
