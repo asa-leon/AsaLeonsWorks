@@ -1,5 +1,5 @@
 .toLeft {
-    padding-top: 15px;
+    padding: 15px;
     background-color: #130024;
 }
 
@@ -35,4 +35,10 @@
     .leftMenuNavItems img {
         display: none;
     }
+}
+
+.leftMenuNavItems a {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    color: #ffffff;
 }
