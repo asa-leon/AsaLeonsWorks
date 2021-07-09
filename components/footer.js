@@ -1,11 +1,18 @@
 import styles from '/components/footer.module.css'
-import { Row, Dropdown, Col, Nav, Tabs, Tab, DropdownButton, ButtonGroup } from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faSoundcloud } from '@fortawesome/free-brands-svg-icons'
+library.add([faEnvelope, faSoundcloud])
+
+import { Row, Dropdown, Col, DropdownButton, ButtonGroup } from 'react-bootstrap'
 
 // トップメニューのレイアウトを含むコンポーネント
 
 export default function Footer() {
     return (
         <footer className={styles.footer}>
+			
 			<div className="container-fluid">
 				<Row>
 					<Col md={3}>
@@ -31,8 +38,9 @@ export default function Footer() {
 								Contact() -&gt; [ E-Mail: <a href="mailto:#">"test@example.com"</a>, Soundcloud: "<a href="#">account information</a>" ]
 							</p>
 							<p className={"d-lg-none"}>
-							Contact() -&gt; [ <a href="mailto:#"><i class="fa fa-envelope"></i></a>, <a href="#"><i class="fa fa-soundcloud"></i></a> ]
+							Contact() -&gt; [ <a href="mailto:#"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a>, <a href="#"><FontAwesomeIcon icon={faSoundcloud}></FontAwesomeIcon></a> ]
 							</p>
+							
 					</Col>
 
 					<Col md={3} className={styles.copyright}>
