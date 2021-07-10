@@ -1,4 +1,4 @@
-import styles from '/components/left-menu.module.css'
+import styles from './left-menu.module.css'
 import Image from 'next/image'
 import { Row, Col, Nav, Tabs, Tab } from 'react-bootstrap'
 import MainContent from './main-content'

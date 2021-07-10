@@ -1,4 +1,4 @@
-import styles from '/components/top-menu.module.css'
+import styles from './top-menu.module.css'
 import { Nav, Tabs, Tab } from 'react-bootstrap'
 import MainContent from './main-content'
 
