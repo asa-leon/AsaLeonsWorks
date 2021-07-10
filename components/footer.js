@@ -34,7 +34,7 @@ export default function Footer() {
 
 					<Col lg={7} md={8} className={styles.contacts}>
 						<p className={styles.upperContact}>
-							Contact() -&gt; [ E-Mail: <a href="mailto:#">"test@example.com"</a>, Soundcloud: "<a href="#">account information</a>" ]
+							Contacts = [ E-Mail: <a href="mailto:#">"test@example.com"</a>, Soundcloud: "<a href="#">account information</a>" ]
 						</p>
 						<p className={styles.lowerContact}>
 							Contact() -&gt; [ <a href="mailto:#"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a>, <a href="#"><FontAwesomeIcon icon={faSoundcloud}></FontAwesomeIcon></a> ]
@@ -42,7 +42,7 @@ export default function Footer() {
         			</Col>
 
 					<Col lg={3} md={2} className={styles.copyright}>
-						<small>Copyright &copy; Leon Mah, All Rights Reserved.</small>
+						<small>&copy; Leon Mah, All Rights Reserved.</small>
 					</Col>
 
 				</Row>
