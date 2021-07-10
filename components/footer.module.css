@@ -3,19 +3,13 @@
     width: 100%;
     position: absolute;
     bottom: 0;
+    padding: 0 15px;
     background-color: #A1A1A1;
     font-size: 0.8rem;
     z-index: 10;
 }
 
-#contacts p {
-    margin-bottom: 0;
-    font-weight: bold;
-}
 
-#contacts p:last-child {
-    text-align: center;
-}
 
 #copyright {
     text-align: right;
@@ -40,7 +34,6 @@
 }
 
 .dropdownMenuButton {
-    width: 160px;
     font-size: 0.9rem;
     font-weight: lighter;
 }
@@ -54,10 +47,22 @@
 }
 
 .contacts p {
+    margin-bottom: 0;
     font-weight: bold;
     text-align: center;
 }
 
+@media (max-width: 768px) {
+    .upperContact {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .lowerContact {
+        display: none;
+    }
+}
 
 .copyright {
     text-align: right;

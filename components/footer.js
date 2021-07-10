@@ -14,7 +14,7 @@ export default function Footer() {
         <footer className={styles.footer}>
 			
 				<Row className={styles.row}>
-					<Col lg={2} md={1}>
+					<Col lg={2} md={2}>
 					<DropdownButton
 						className={styles.dropdownMenuButton} 
 						as={ButtonGroup}
@@ -32,17 +32,16 @@ export default function Footer() {
 					</DropdownButton>
 					</Col>
 
-					<Col md={7} className={styles.contacts}>
-							<p className={"d-none d-md-block"}>
-								Contact() -&gt; [ E-Mail: <a href="mailto:#">"test@example.com"</a>, Soundcloud: "<a href="#">account information</a>" ]
-							</p>
-							<p className={"d-none d-xs-block"}>
+					<Col lg={7} md={8} className={styles.contacts}>
+						<p className={styles.upperContact}>
+							Contact() -&gt; [ E-Mail: <a href="mailto:#">"test@example.com"</a>, Soundcloud: "<a href="#">account information</a>" ]
+						</p>
+						<p className={styles.lowerContact}>
 							Contact() -&gt; [ <a href="mailto:#"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a>, <a href="#"><FontAwesomeIcon icon={faSoundcloud}></FontAwesomeIcon></a> ]
-							</p>
-							
-					</Col>
+						</p>
+        			</Col>
 
-					<Col md={3} className={styles.copyright}>
+					<Col lg={3} md={2} className={styles.copyright}>
 						<small>Copyright &copy; Leon Mah, All Rights Reserved.</small>
 					</Col>
 

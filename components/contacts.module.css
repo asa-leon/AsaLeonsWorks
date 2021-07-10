@@ -1,0 +1,21 @@
+.contacts p {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.contacts p {
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .upperContact {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .lowerContact {
+        display: none;
+    }
+}
