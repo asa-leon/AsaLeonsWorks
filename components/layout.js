@@ -5,11 +5,14 @@ import LeftMenuEmbed from './subLayouts/left-menu'
 import TopMenuEmbed from './subLayouts/top-menu'
 import MainContentEmbed from './subLayouts/main-content'
 import FooterEmbed from './subLayouts/footer'
-import { Row } from 'react-bootstrap'
+import { Row, Breadcrumb, BreadcrumbItem } from 'react-bootstrap'
+
+// main-content制御用の配列
+const titleList = ['frontend', 'php', 'beatmaking']
 
 export default function Layout({ children, home }) {
 	return (
-
+<>
 		<div className={"container-fluid"}>
 			<Row>
 
@@ -18,14 +21,19 @@ export default function Layout({ children, home }) {
 				</section>
 
 				<section className={`${styles.toRight} col-md-9 col-sm-7 vh-100`}>
-
 					<TopMenuEmbed></TopMenuEmbed>
+					<Breadcrumb>
+						<Breadcrumb.Item href="/">Top</Breadcrumb.Item>
+					</Breadcrumb>
 					<MainContentEmbed></MainContentEmbed>
 				</section>
 
 			</Row>
 
-			<FooterEmbed></FooterEmbed>
+			
 		</div>
+
+		<FooterEmbed></FooterEmbed>
+		</>
 	)
 }

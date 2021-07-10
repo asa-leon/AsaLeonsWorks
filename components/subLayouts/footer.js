@@ -11,9 +11,9 @@ import { Row, Dropdown, Col, DropdownButton, ButtonGroup } from 'react-bootstrap
 
 export default function Footer() {
     return (
-        <footer className={styles.footer}>
+        <footer className={`${styles.footer} container-fluid`}>
 			
-				<Row className={styles.row}>
+				<Row className={styles.footerRow}>
 					<Col lg={2} md={2}>
 					<DropdownButton
 						className={styles.dropdownMenuButton} 

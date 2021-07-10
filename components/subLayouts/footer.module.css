@@ -2,8 +2,9 @@
 .footer {
     width: 100%;
     position: absolute;
+    align-items: center;
     bottom: 0;
-    padding: 0 15px;
+    padding: 5px 15px;
     background-color: #A1A1A1;
     font-size: 0.8rem;
     z-index: 10;
@@ -20,15 +21,15 @@
 }
 
 /* bootstrap extends */
-.footer .row {
-    position: relative;
-    height: 50px;
+.footer .footerRow {
     align-items: center;
 }
 
 
 .dropdownMenuButton button {
-    font-size: 0.8rem;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    font-weight: lighter;
 }
 
 @media (max-width: 900px) {
