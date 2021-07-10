@@ -7,10 +7,8 @@ import MainContentEmbed from './subLayouts/main-content'
 import FooterEmbed from './subLayouts/footer'
 import { Row, Breadcrumb, BreadcrumbItem } from 'react-bootstrap'
 
-// main-content制御用の配列
-const titleList = ['frontend', 'php', 'beatmaking']
-
 export default function Layout({ children, home }) {
+
 	return (
 <>
 		<div className={"container-fluid"}>

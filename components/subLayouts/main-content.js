@@ -1,26 +1,30 @@
-export default function MainContent(props) {
+import { useMainContentContext } from '../../context/main-content-context'
 
-	switch (props.title) {
-		case 'frontend':
+export default function MainContent() {
+
+	const { titleNum, setTitleNum } = useMainContentContext()
+
+	switch (titleNum) {
+		case 0:
 			return (
 				<>
-				<h1>Frontend Coding</h1>
+				<h1>{titleNum}</h1>
 				<p>Descriptions here.</p>
 				</>
 			)
 
-		case 'php':
+		case 1:
 			return (
 				<>
-				<h1>PHP</h1>
+				<h1>{titleNum}</h1>
 				<p>Descriptions here.</p>
 				</>
 			)
 
-		case 'beatmaking':
+		case 2:
 			return (
 				<>
-				<h1>Beat Making</h1>
+				<h1>{titleNum}</h1>
 				<p>Descriptions here.</p>
 				</>
 			)

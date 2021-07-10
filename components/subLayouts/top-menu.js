@@ -1,33 +1,31 @@
 import styles from './top-menu.module.css'
 import { Nav, Tabs, Tab } from 'react-bootstrap'
 import MainContent from './main-content'
+import { useMainContentContext } from '../../context/main-content-context'
 
 // トップメニューのレイアウトを含むコンポーネント
+export default function TopMenu(props) {
 
-export default function TopMenu() {
+
+	const { titleNum, setTitleNum } = useMainContentContext()
 
 	// main-content制御用の配列
 	const titleList = ['frontend', 'php', 'beatmaking']
 
 	return (
 
-		<Tabs className={styles.topMenu} defaultActiveKey="frontend">
-			<Tab eventKey="frontend" title="Frontend Coding">
-				<article>
-					<MainContent title={titleList[0]} />
-				</article>
+		<Tabs 
+		className={styles.topMenu}
+		activeKey={titleNum}
+		onSelect={ (k) => setTitleNum(k)}
+		>
+			<Tab eventKey={0} title="Frontend Coding">
 			</Tab>
 
-			<Tab eventKey="php" title="PHP">
-				<article>
-					<MainContent title={titleList[1]} />
-				</article>
+			<Tab eventKey={1} title="PHP">
 			</Tab>
 
-			<Tab eventKey="beatmaking" title="Beat Making">
-				<article>
-					<MainContent title={titleList[2]} />
-				</article>
+			<Tab eventKey={2} title="Beat Making">
 			</Tab>
 		</Tabs>
 	)
