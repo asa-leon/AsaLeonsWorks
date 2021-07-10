@@ -3,3 +3,7 @@
     background-color: #130024;
 }
 
+.toRight {
+    padding-left: 0;
+    padding-right: 0;
+}

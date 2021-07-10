@@ -1,13 +1,7 @@
-.toLeft {
-    padding: 15px;
-    background-color: #130024;
-}
-
 .leftMenuTitle {
     display: flex;
     flex-direction: row;
 }
-
 
 .leftMenuTitle h1 {
     margin-left: 10px;
@@ -40,5 +34,4 @@
 .leftMenuNavItems a {
     padding: 0.5rem;
     font-size: 0.9rem;
-    color: #ffffff;
 }
