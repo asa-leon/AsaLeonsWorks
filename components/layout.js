@@ -12,7 +12,7 @@ export default function Layout({ children, home }) {
 
 		<div className={"container-fluid"}>
 			<Row>
-			<section className={styles.toLeft}>
+			<section className={`${styles.toLeft} col-md-3 col-sm-5 vh-100`}>
 				<LeftMenuEmbed></LeftMenuEmbed>
 				<TopMenuEmbed></TopMenuEmbed>
 				<MainContentEmbed></MainContentEmbed>
