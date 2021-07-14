@@ -16,12 +16,29 @@
 .leftMenuNavItems {
     display: inline-flex;
     align-items: center;
-    margin-left: 40px;
+    margin: 0 -15px;
+}
+
+.leftMenuNavItems img {
+    margin-right: 15px;
+    margin-left: 30px;
+}
+
+.leftMenuNavItems a {
+    width: 100%;
+}
+
+.leftMenuNavItems:hover {
+    background-color: rgba(211, 211, 211, 0.5);
 }
 
 .leftMenuNavItems img {
     width: 20px;
     height: 20px;
+}
+
+.leftMenuNavItems.nav-item > a.nav-link.active {
+    background-color: gray;
 }
 
 @media (max-width: 768px) {
