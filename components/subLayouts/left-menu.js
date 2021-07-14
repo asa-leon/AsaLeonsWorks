@@ -2,13 +2,13 @@ import styles from './left-menu.module.css'
 import Image from 'next/image'
 import { Row, Col, Nav, Tabs, Tab } from 'react-bootstrap'
 import MainContent from './main-content'
+import { useMainContentContext } from '../../context/main-content-context'
 
 // トップメニューのレイアウトを含むコンポーネント
 
 export default function LeftMenu() {
 
-	// main-content制御用の配列
-	const titleList = ['frontend', 'php', 'beatmaking']
+	const { titleNum, setTitleNum } = useMainContentContext()
 
 	return (
 		<>
@@ -16,20 +16,24 @@ export default function LeftMenu() {
 				<img src="/images/folderIcon.png" alt="icon of folder" />
 				<h1>Leon Mah's Work</h1>
 			</div>
-			<Nav defaultActiveKey="frontend" className="flex-column">
+			<Nav 
+			activeKey={titleNum} 
+			className="flex-column"
+			onSelect={ (k) => setTitleNum(k) }
+			>
 				<Nav.Item className={styles.leftMenuNavItems}>
 					<img src="/images/htmlIcon.png" alt="icon of html" />
-					<Nav.Link href="#frontend">Frontend Coding</Nav.Link>
+					<Nav.Link eventKey={0}>Frontend Coding</Nav.Link>
 				</Nav.Item>
 
 				<Nav.Item className={styles.leftMenuNavItems}>
 					<img src="/images/phpIcon.png" alt="icon of php" />
-					<Nav.Link href="#php">PHP</Nav.Link>
+					<Nav.Link eventKey={1}>PHP</Nav.Link>
 				</Nav.Item>
 
 				<Nav.Item className={styles.leftMenuNavItems}>
 					<img src="/images/beatMakingIcon.png" alt="icon of html" />
-					<Nav.Link href="#beatMaking">Beat Making</Nav.Link>
+					<Nav.Link eventKey={2}>Beat Making</Nav.Link>
 				</Nav.Item>
 			</Nav>
 		</>
