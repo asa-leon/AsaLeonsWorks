@@ -25,11 +25,9 @@ export default function Layout({ children, home }) {
 						<TopMenuEmbed></TopMenuEmbed>
 
 						<div className={`${styles.mainWrapper} container`}>
-							<div className={styles.breadcrumbWrapper}>
-								<Breadcrumb>
-									<Breadcrumb.Item href="/">Top</Breadcrumb.Item>
+								<Breadcrumb className={styles.breadcrumNav}>
+									<Breadcrumb.Item className={styles.breadcrumItem} href="/">Top</Breadcrumb.Item>
 								</Breadcrumb>
-							</div>
 
 							<article className={styles.mainContentsWrapper}>
 								<MainContentEmbed></MainContentEmbed>

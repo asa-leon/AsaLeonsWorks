@@ -18,10 +18,10 @@
 
 /* Bootstrap extention */
 
-.breadcrumbWrapper > .breadcrum {
+.breadcrumNav ol {
     background-color: transparent !important;
 }
 
-.breadcrumbWrapper > .breadcrumb-item + .breadcrumb-item::before {
+.breadcrumItem + .breadcrumItem::before {
     content: ">";
   }
