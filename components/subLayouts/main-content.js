@@ -5,7 +5,7 @@ export default function MainContent() {
 	const { titleNum, setTitleNum } = useMainContentContext()
 
 	switch (titleNum) {
-		case 0:
+		case '0':
 			return (
 				<>
 				<h1>{titleNum}</h1>
@@ -13,7 +13,7 @@ export default function MainContent() {
 				</>
 			)
 
-		case 1:
+		case '1':
 			return (
 				<>
 				<h1>{titleNum}</h1>
@@ -21,7 +21,7 @@ export default function MainContent() {
 				</>
 			)
 
-		case 2:
+		case '2':
 			return (
 				<>
 				<h1>{titleNum}</h1>

@@ -7,3 +7,21 @@
     padding-left: 0;
     padding-right: 0;
 }
+
+.mainWrapper .container {
+    margin-left: 0;
+}
+
+.mainContentsWrapper {
+    display: block;
+}
+
+/* Bootstrap extention */
+
+.breadcrumbWrapper > .breadcrum {
+    background-color: transparent !important;
+}
+
+.breadcrumbWrapper > .breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+  }

@@ -8,7 +8,7 @@ export function useMainContentContext() {
 
 export function MainContentProvider({ children }) {
 
-    const [titleNum, setTitleNum] = useState(0)
+    const [titleNum, setTitleNum] = useState('0')
 
     let value = {
         titleNum,

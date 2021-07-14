@@ -32,7 +32,7 @@ export default function Footer() {
 					</DropdownButton>
 					</Col>
 
-					<Col lg={7} md={8} className={styles.contacts}>
+					<Col lg={7} md={7} className={styles.contacts}>
 						<p className={styles.upperContact}>
 							Contacts = [ E-Mail: <a href="mailto:#">"test@example.com"</a>, Soundcloud: "<a href="#">account information</a>" ]
 						</p>
@@ -41,7 +41,7 @@ export default function Footer() {
 						</p>
         			</Col>
 
-					<Col lg={3} md={2} className={styles.copyright}>
+					<Col lg={3} md={3} className={styles.copyright}>
 						<small>&copy; Leon Mah, All Rights Reserved.</small>
 					</Col>
 

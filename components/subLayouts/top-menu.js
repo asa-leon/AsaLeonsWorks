@@ -6,11 +6,7 @@ import { useMainContentContext } from '../../context/main-content-context'
 // トップメニューのレイアウトを含むコンポーネント
 export default function TopMenu(props) {
 
-
 	const { titleNum, setTitleNum } = useMainContentContext()
-
-	// main-content制御用の配列
-	const titleList = ['frontend', 'php', 'beatmaking']
 
 	return (
 

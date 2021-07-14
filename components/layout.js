@@ -6,32 +6,42 @@ import TopMenuEmbed from './subLayouts/top-menu'
 import MainContentEmbed from './subLayouts/main-content'
 import FooterEmbed from './subLayouts/footer'
 import { Row, Breadcrumb, BreadcrumbItem } from 'react-bootstrap'
+import { useMainContentContext } from '../context/main-content-context'
 
 export default function Layout({ children, home }) {
 
+	const { titleNum, setTitleNum } = useMainContentContext()
+
 	return (
-<>
-		<div className={"container-fluid"}>
-			<Row>
+		<>
+			<div className={"container-fluid"}>
+				<Row>
 
-				<section className={`${styles.toLeft} col-md-3 col-sm-5 vh-100`}>
-					<LeftMenuEmbed></LeftMenuEmbed>
-				</section>
+					<section className={`${styles.toLeft} col-md-3 col-sm-5 vh-100`}>
+						<LeftMenuEmbed></LeftMenuEmbed>
+					</section>
 
-				<section className={`${styles.toRight} col-md-9 col-sm-7 vh-100`}>
-					<TopMenuEmbed></TopMenuEmbed>
-					<Breadcrumb>
-						<Breadcrumb.Item href="/">Top</Breadcrumb.Item>
-					</Breadcrumb>
-					<MainContentEmbed></MainContentEmbed>
-				</section>
+					<section className={`${styles.toRight} col-md-9 col-sm-7 vh-100`}>
+						<TopMenuEmbed></TopMenuEmbed>
 
-			</Row>
+						<div className={`${styles.mainWrapper} container`}>
+							<div className={styles.breadcrumbWrapper}>
+								<Breadcrumb>
+									<Breadcrumb.Item href="/">Top</Breadcrumb.Item>
+								</Breadcrumb>
+							</div>
 
-			
-		</div>
+							<article className={styles.mainContentsWrapper}>
+								<MainContentEmbed></MainContentEmbed>
+							</article>
+						</div>
+					</section>
+				</Row>
 
-		<FooterEmbed></FooterEmbed>
+
+			</div>
+
+			<FooterEmbed></FooterEmbed>
 		</>
 	)
 }
