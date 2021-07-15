@@ -8,6 +8,12 @@
     font-size: 1.2rem;
 }
 
+@media (max-width: 900px) {
+    .leftMenuTitle h1 {
+        font-size: 1rem;
+    }
+}
+
 .leftMenuTitle img {
     width: 20px;
     height: 20px;
@@ -26,6 +32,14 @@
 
 .leftMenuNavItems a {
     width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    .leftMenuNavItems a {
+        font-size: 0.8rem;
+    }
 }
 
 .leftMenuNavItems:hover {
@@ -37,14 +51,9 @@
     height: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 575px) {
     .leftMenuTitle img,
     .leftMenuNavItems img {
         display: none;
     }
-}
-
-.leftMenuNavItems a {
-    padding: 0.5rem;
-    font-size: 0.9rem;
 }

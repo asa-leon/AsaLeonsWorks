@@ -17,11 +17,11 @@ export default function Layout({ children, home }) {
 			<div className={"container-fluid"}>
 				<Row>
 
-					<section className={`${styles.toLeft} col-md-3 col-sm-5 vh-100`}>
+					<section className={`${styles.toLeft} col-md-3 col-sm-4 vh-100`}>
 						<LeftMenuEmbed></LeftMenuEmbed>
 					</section>
 
-					<section className={`${styles.toRight} col-md-9 col-sm-7 vh-100`}>
+					<section className={`${styles.toRight} col-md-9 col-sm-8 vh-100`}>
 						<TopMenuEmbed></TopMenuEmbed>
 
 						<div className={`${styles.mainWrapper} container`}>
