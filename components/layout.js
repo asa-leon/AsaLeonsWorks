@@ -10,7 +10,7 @@ import { useGlobalContext } from '../context/global'
 
 export default function Layout({ children, home }) {
 
-	const { titleNum, setTitleNum } = useGlobalContext()
+	const [ {titleNum, setTitleNum} ] = useGlobalContext()
 
 	return (
 		<>

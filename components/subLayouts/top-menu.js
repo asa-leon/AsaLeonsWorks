@@ -6,7 +6,7 @@ import { useGlobalContext } from '../../context/global'
 // トップメニューのレイアウトを含むコンポーネント
 export default function TopMenu(props) {
 
-	const { titleNum, setTitleNum } = useGlobalContext()
+	const [ {titleNum, setTitleNum} ] = useGlobalContext()
 
 	return (
 

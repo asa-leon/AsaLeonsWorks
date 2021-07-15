@@ -9,18 +9,27 @@ export function useGlobalContext() {
 export function GlobalContextProvider({ children }) {
 
     const [titleNum, setTitleNum] = useState('0')
+    const [a, setA] = useState('A')
 
-    let value = {titleNum, setTitleNum}
+    let value = [
+        {titleNum, setTitleNum},
+        {a, setA}
+    ]
 
     /* 複数の値を管理する場合は以下の様に記述する
     *
-    *  const [anotherItem, setAnotherItem] = useState(any)
+    *  const [hoge, setHoge] = useState(any)
+    *  const [fuga, setFuga] = useState(any)
     *
     *  let value = [
-    *   {titleNum, setTitleNum},
-    *   {anotherItem, setAnotherItem}
+    *   {hoge, setHoge},
+    *   {fuga, setFuga}
     *  ]
-    *  Contextの利用先で、同じ情報を取り出さないと動かない模様。。
+    * 
+    *  Contextの利用先では、以下の様に取り出す
+    *  
+    *  1: import { useGlobalContext } from '../../context/global'
+    *  2: const [ {hoge, setHoge}, ...必要なオブジェクトだけを配列内に記述 ] = useGlobalContext()
     */
 
     return (
