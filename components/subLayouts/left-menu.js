@@ -17,6 +17,7 @@ export default function LeftMenu() {
 				<h1>Leon Mah's Work</h1>
 			</div>
 			<Nav
+			variant="pills"
 			activeKey={titleNum} 
 			className="flex-column"
 			onSelect={ (k) => setTitleNum(k) }
