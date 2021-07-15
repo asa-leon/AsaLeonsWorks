@@ -5,12 +5,21 @@ import LeftMenuEmbed from './subLayouts/left-menu'
 import TopMenuEmbed from './subLayouts/top-menu'
 import MainContentEmbed from './subLayouts/main-content'
 import FooterEmbed from './subLayouts/footer'
-import { Row, Breadcrumb, BreadcrumbItem } from 'react-bootstrap'
+import { Row, Breadcrumb, BreadcrumbItem, Tab, TabContent } from 'react-bootstrap'
 import { useGlobalContext } from '../context/global'
 
 export default function Layout({ children, home }) {
 
-	const [ {titleNum, setTitleNum} ] = useGlobalContext()
+	if (process.browser) {
+		const navItems = document.getElementsByClassName('nav-link')
+		console.log(navItems)
+
+		navItems.onclick = () => {
+			console.log('Clicked!')
+		}
+	}
+
+	const [{ titleNum, setTitleNum }] = useGlobalContext()
 
 	return (
 		<>

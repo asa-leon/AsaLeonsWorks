@@ -23,9 +23,8 @@ export default function LeftMenu() {
 			onSelect={ (k) => setTitleNum(k) }
 			>
 				<Nav.Item className={styles.leftMenuNavItems}>
-					<Nav.Link 
-						className={styles.leftMenuNavLink}
-						eventKey={0}><img src="/images/htmlIcon.png" alt="icon of html" />Frontend Coding</Nav.Link>
+					<Nav.Link
+					eventKey={0}><img src="/images/htmlIcon.png" alt="icon of html" />Frontend Coding</Nav.Link>
 				</Nav.Item>
 
 				<Nav.Item className={styles.leftMenuNavItems}>

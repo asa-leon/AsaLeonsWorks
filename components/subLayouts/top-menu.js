@@ -15,14 +15,24 @@ export default function TopMenu(props) {
 		activeKey={titleNum}
 		onSelect={ (k) => setTitleNum(k)}
 		>
+			<Tab
+				
+				eventKey={'0'} 
+				title="Frontend Coding"
+			>
+			</Tab>
+
 			<Tab 
-				eventKey={0} title="Frontend Coding">
+				eventKey={'1'} 
+				title="PHP"
+			>
 			</Tab>
 
-			<Tab eventKey={1} title="PHP">
-			</Tab>
-
-			<Tab eventKey={2} title="Beat Making">
+			<Tab 
+				
+				eventKey={'2'} 
+				title="Beat Making"
+			>
 			</Tab>
 		</Tabs>
 	)
