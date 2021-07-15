@@ -1,13 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../styles/globals.css'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-import { MainContentProvider } from '../context/main-content-context'
+import { GlobalContextProvider } from '../context/global'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <MainContentProvider>
+    <GlobalContextProvider>
       <Component {...pageProps} />
-    </MainContentProvider>
+    </GlobalContextProvider>
   )
 }
 

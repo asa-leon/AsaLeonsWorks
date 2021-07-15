@@ -1,8 +1,8 @@
-import { useMainContentContext } from '../../context/main-content-context'
+import { useGlobalContext } from '../../context/global'
 
 export default function MainContent() {
 
-	const { titleNum, setTitleNum } = useMainContentContext()
+	const { titleNum, setTitleNum } = useGlobalContext()
 
 	switch (titleNum) {
 		case '0':

@@ -2,13 +2,13 @@ import styles from './left-menu.module.css'
 import Image from 'next/image'
 import { Row, Col, Nav, Tabs, Tab } from 'react-bootstrap'
 import MainContent from './main-content'
-import { useMainContentContext } from '../../context/main-content-context'
+import { useGlobalContext } from '../../context/global'
 
 // トップメニューのレイアウトを含むコンポーネント
 
 export default function LeftMenu() {
 
-	const { titleNum, setTitleNum } = useMainContentContext()
+	const { titleNum, setTitleNum } = useGlobalContext()
 
 	return (
 		<>

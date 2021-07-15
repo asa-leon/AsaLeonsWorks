@@ -1,12 +1,12 @@
 import styles from './top-menu.module.css'
-import { Nav, Tabs, Tab } from 'react-bootstrap'
+import { Nav, Tabs, Tab, Fade } from 'react-bootstrap'
 import MainContent from './main-content'
-import { useMainContentContext } from '../../context/main-content-context'
+import { useGlobalContext } from '../../context/global'
 
 // トップメニューのレイアウトを含むコンポーネント
 export default function TopMenu(props) {
 
-	const { titleNum, setTitleNum } = useMainContentContext()
+	const { titleNum, setTitleNum } = useGlobalContext()
 
 	return (
 
@@ -15,7 +15,8 @@ export default function TopMenu(props) {
 		activeKey={titleNum}
 		onSelect={ (k) => setTitleNum(k)}
 		>
-			<Tab eventKey={0} title="Frontend Coding">
+			<Tab 
+				eventKey={0} title="Frontend Coding">
 			</Tab>
 
 			<Tab eventKey={1} title="PHP">

@@ -6,11 +6,11 @@ import TopMenuEmbed from './subLayouts/top-menu'
 import MainContentEmbed from './subLayouts/main-content'
 import FooterEmbed from './subLayouts/footer'
 import { Row, Breadcrumb, BreadcrumbItem } from 'react-bootstrap'
-import { useMainContentContext } from '../context/main-content-context'
+import { useGlobalContext } from '../context/global'
 
 export default function Layout({ children, home }) {
 
-	const { titleNum, setTitleNum } = useMainContentContext()
+	const { titleNum, setTitleNum } = useGlobalContext()
 
 	return (
 		<>
@@ -25,9 +25,9 @@ export default function Layout({ children, home }) {
 						<TopMenuEmbed></TopMenuEmbed>
 
 						<div className={`${styles.mainWrapper} container`}>
-								<Breadcrumb className={styles.breadcrumNav}>
-									<Breadcrumb.Item className={styles.breadcrumItem} href="/">Top</Breadcrumb.Item>
-								</Breadcrumb>
+							<Breadcrumb className={styles.breadcrumNav}>
+								<Breadcrumb.Item className={styles.breadcrumItem} href="/">Top</Breadcrumb.Item>
+							</Breadcrumb>
 
 							<article className={styles.mainContentsWrapper}>
 								<MainContentEmbed></MainContentEmbed>
