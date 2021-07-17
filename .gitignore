@@ -32,3 +32,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# libraries
+/public/column-site/css/bootstrap
