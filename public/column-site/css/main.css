@@ -3,3 +3,65 @@
     padding: 0;
 }
 
+/* general */
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+}
+
+.heading {
+    padding: 1.5rem;
+}
+
+
+/* header */
+header, footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #15f;
+    color: #fff;
+}
+
+#headerTitle {
+    display: inline-flex;
+}
+
+/* mian content */
+.cards h2 {
+    margin: 40px 0;
+}
+
+.card-items {
+    padding: 30px;
+}
+
+.cards img {
+    width: 100%;
+}
+
+.card-body h3 {
+    font-size: 1.5rem;
+}
+
+/* footer */
+#footerContents {
+    display: inline-flex;
+}
+
+.footer-nav {
+    display: inline-flex;
+    list-style-type: none;
+}
+
+.footer-nav .footer-logo {
+    width: 180px;
+}
+
+.footer-nav li a, #footerContents p {
+    padding: 0 30px;
+    text-align: center;
+    margin-right: 10px;
+}
