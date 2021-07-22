@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+h1, h2, h3, h4, h5, img, a {
+    display: block;
+}
+
 /* general */
 a {
     color: #000;
@@ -35,11 +39,30 @@ header, footer {
 }
 
 .card-items {
-    padding: 30px;
 }
 
-.cards img {
-    width: 100%;
+.card {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.card:hover {
+    bottom: 10px;
+}
+
+.card img {
+    margin: 0.5rem auto;
+    width: 200px;
+    height: 200px;
+}
+
+.card-body {
+    padding: 15px 0;
+    vertical-align: middle;
 }
 
 .card-body h3 {
