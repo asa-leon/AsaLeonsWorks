@@ -23,14 +23,23 @@ a:hover {
 
 /* header */
 header, footer {
+    display: flex;
+    align-items: center;
     width: 100%;
+    height: 70px;
     padding: 20px 0;
     background-color: #15f;
     color: #fff;
 }
 
-#headerTitle {
-    display: inline-flex;
+header img {
+    float: left;
+    width: 120px;
+    height: auto;
+}
+
+header h1 {
+    text-align: center;
 }
 
 /* mian content */
@@ -107,20 +116,23 @@ header, footer {
 
 /* footer */
 #footerContents {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
 }
 
 .footer-nav {
-    display: inline-flex;
-    list-style-type: none;
+    margin-bottom: 0;
 }
 
-.footer-nav .footer-logo {
-    width: 180px;
+.footer-nav li {
+    display: inline-block;
+    margin-right: 80px;
 }
 
-.footer-nav li a, #footerContents p {
-    padding: 0 30px;
-    text-align: center;
-    margin-right: 10px;
+.footer-nav li a {
+    color: #fff;
+}
+
+.copyright {
+    text-align: right;
 }
