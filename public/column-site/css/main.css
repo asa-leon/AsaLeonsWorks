@@ -34,11 +34,12 @@ header, footer {
 }
 
 /* mian content */
-.cards h2 {
-    margin: 40px 0;
+.cards {
+    margin-bottom: 50px;
 }
 
-.card-items {
+.cards h2 {
+    margin: 40px 0;
 }
 
 .card {
@@ -67,6 +68,41 @@ header, footer {
 
 .card-body h3 {
     font-size: 1.5rem;
+}
+
+#relatedSites {
+    margin-bottom: 50px;
+}
+.banner {
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.banner img {
+    margin: 0.5rem auto;
+}
+
+.goTop-wrapper {
+    text-align: right;
+}
+.goTop {
+    display: inline-flex;
+    align-items: baseline;
+    vertical-align: middle;
+    padding: 10px 15px;
+    background-color: #15f;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+.goTop p {
+    margin: 0 10px 0 0;
+}
+
+.goTop img {
+    width: 10px;
+    height: 10px;
 }
 
 /* footer */
