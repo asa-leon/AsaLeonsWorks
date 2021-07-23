@@ -233,25 +233,23 @@ footer img {
     color: #000;
 }
 
-.column-page-wrapper img {
-    margin: 20px;
-    width: auto;
-    height: 100%;
-    border: 1px solid #eee;
-    border-radius: 5px;
+.column-content {
+    display: inline-flex;
+}
 
+.column-content img {
+    border: 1px solid #eee;
+    margin: 0 20px;
 }
 
 .column-content-list {
-    margin-top: 30px;
-    margin-left: -40px;
-    padding: 30px;
-    text-align-last: left;
+    margin: 0 20px;
+    text-align: left;
     list-style-type: none;
 }
 
 .column-content-list li {
-    margin: 10px;
+    margin-bottom: 5px;
 }
 
 .column-content-list li::before {
