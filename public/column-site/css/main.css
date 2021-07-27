@@ -202,6 +202,10 @@ footer img {
     background-color: rgba(210, 210, 210, 0.2);
 }
 
+#leftMenuNav.fixed {
+    transition: top 0.5s ease;
+}
+
 .left-menu-nav h3 {
     margin-bottom: 20px;
     padding-bottom: 5px;
