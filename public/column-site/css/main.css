@@ -8,10 +8,6 @@ h1, h2, h3, h4, h5, img, a {
 }
 
 /* general */
-body {
-    position: relative;
-}
-
 a {
     color: #fff;
 }
@@ -187,6 +183,14 @@ footer img {
 *
 */
 
+.column-page-wrapper a {
+    color: #000;
+}
+
+.column-page-wrapper a:hover, .left-menu-to-top:focus, .left-menu-to-top:visited {
+    color: #000;
+}
+
 .column-page-wrapper {
     position: relative;
 }
@@ -196,7 +200,6 @@ footer img {
     border: 3px solid #eee;
     border-radius: 5px;
     background-color: rgba(210, 210, 210, 0.2);
-    color: #000;
 }
 
 .left-menu-nav h3 {
@@ -224,13 +227,8 @@ footer img {
 
 .left-menu-to-top {
     margin-bottom: 20px;
-    color: #000;
     text-align: left;
     text-decoration: underline;
-}
-
-.left-menu-to-top:hover, .left-menu-to-top:focus, .left-menu-to-top:visited {
-    color: #000;
 }
 
 .column-content {

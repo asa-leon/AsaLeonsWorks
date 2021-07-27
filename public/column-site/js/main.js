@@ -11,4 +11,21 @@ $(document).ready(function(){
             return false;
         });
     });
+
+    // コラムページのleft-menu-navの挙動
+    $(window).scroll(function leftMenuMovement() {
+        let screenHeight = window.screen.height
+        let navOffset = $('#leftMenuNav').offset();
+
+        let offsetX = navOffset.left;
+        let offsetY = navOffset.top;
+        console.log(offsetY);
+
+        if (offsetY > $('header').height) {
+            console.log("over header");
+
+            //offsetY = 
+        };
+
+    });
 });
