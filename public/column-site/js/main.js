@@ -13,18 +13,16 @@ $(document).ready(function(){
     });
 
     // コラムページのleft-menu-navの挙動
-    $(window).on('scroll', function () {
-        let $window = $(window),
-        $nav = $('#leftMenuNav'),
-        defaultPositionTop = $('header').height(),
-        setOffsetPosition = $nav.offset(),
-        fixedClassName = 'fixed';
+    /*$(window).on('scroll', function () {
+        var $window = $(window);
+        let $nav = $('#leftMenuNav');
+        let headerHeight = $('header').height();
+        let defaultNavOffset = $nav.offset();
 
-        if ($(this).scrollTop() > defaultPositionTop) {
-            $nav.addClass(fixedClassName).css('top', defaultPositionTop + $(this).scrollTop() - defaultPositionTop + 'px');
-        } else {
-            $('.' + fixedClassName).css('top', 0);
-            $nav.removeClass(fixedClassName);
-        }
-    });
+        if (($window.scrollTop() + headerHeight) > defaultNavOffset.top) {
+
+            $nav.addClass('fixed').css('top', $window.scrollTop() + headerHeight )
+            
+        };
+    });*/
 });
