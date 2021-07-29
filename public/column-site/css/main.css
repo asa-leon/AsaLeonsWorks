@@ -21,6 +21,13 @@ a:hover {
     font-size: 2rem;
 }
 
+@media (max-width: 768px) {
+    .heading h2 {
+        margin: 40px 0;
+        font-size: 1.5rem;
+    }
+}
+
 /* header */
 header {
     width: 100%;
@@ -38,8 +45,7 @@ header a:hover, header a:focus, header a:visited {
 
 .header-logo img {
     position: absolute;
-    width: 110px;
-    height: auto;
+    width: 120px;
     float: left;
 }
 
@@ -47,6 +53,32 @@ header h1 {
     padding-top: 15px;
     text-align: center;
     font-size: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .header-logo img {
+        width: 100px;
+        padding-top: 7px;
+    }
+
+    header h1 {
+        padding-top: 20px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        height: 70px;
+    }
+
+    .header-logo img {
+        width: 80px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
 }
 
 /* mian content */
@@ -71,8 +103,8 @@ header h1 {
 
 .card img {
     margin: 0.5rem auto;
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
 }
 
 .card-body {
@@ -84,9 +116,15 @@ header h1 {
     font-size: 1.5rem;
 }
 
+.banners-wrapper h2 {
+    padding-bottom: 20px;
+    border-bottom: 2px solid red;
+}
+
 #relatedSites {
     margin-bottom: 50px;
 }
+
 .banner {
     margin-bottom: 30px;
     border: 1px solid #eee;
@@ -95,6 +133,7 @@ header h1 {
 
 .banner img {
     margin: 0.5rem auto;
+    width: 100%;
 }
 
 .goTop-wrapper {
@@ -131,6 +170,16 @@ header h1 {
     height: 10px;
 }
 
+@media (max-width: 992px) {
+    .goTop p {
+        font-size: 0.8rem;
+    }
+
+    .goTop::after {
+        font-size: 0.8rem;
+    }
+}
+
 /* footer */
 footer {
     display: flex;
@@ -148,8 +197,11 @@ footer {
     position: relative;
 }
 
+.footer-logo {
+    margin-right: 30px;
+}
+
 footer img {
-    margin-right: 50px;
     width: 120px;
     height: auto;
 }
@@ -160,7 +212,10 @@ footer img {
 
 .footer-nav li {
     display: inline-block;
-    margin-right: 80px;
+}
+
+.divideFooterNavItems {
+    margin: 0 10px;
 }
 
 .footer-nav li a {
@@ -174,6 +229,27 @@ footer img {
     right: 0;
 }
 
+@media (max-width: 768px) {
+    footer img {
+        width: 100px;
+    }
+
+    .copyright {
+        bottom: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    footer img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-nav li a, .copyright {
+        font-size: 0.8rem;
+    }
+}
 /*
 *
 * コラムページ
@@ -189,8 +265,19 @@ footer img {
 }
 
 .column-layout-wrapper {
-    justify-content: space-between;
     position: relative;
+}
+
+.column-layout-wrapper a {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.column-layout-wrapper a:hover, .left-menu-to-top:hover {
+    color: #777;
+    border-color: red;
+    text-decoration: none;
 }
 
 .left-menu-nav {
@@ -204,14 +291,11 @@ footer img {
     top: 80px;
 }
 
-#leftMenuNav.fixed {
-    transition: top 0.5s ease;
-}
-
 .left-menu-nav h3 {
     margin-bottom: 20px;
     padding-bottom: 5px;
     font-size: 1.5rem;
+    letter-spacing: 4px;
     border-bottom: 3px solid #eee;
 }
 
@@ -222,8 +306,6 @@ footer img {
 }
 
 .left-menu-nav ul li {
-    margin: 15px 0;
-    border-bottom: 1px solid #eee;
     list-style-type: disc;
 }
 
@@ -232,9 +314,16 @@ footer img {
 }
 
 .left-menu-to-top {
-    margin-bottom: 20px;
+    width: fit-content;
     text-align: left;
-    text-decoration: underline;
+    letter-spacing: 4px;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+}
+
+.left-menu-nav.onSP {
+    margin-bottom: 80px;
+    position: inherit;
 }
 
 .column-content {
@@ -256,16 +345,19 @@ footer img {
     list-style-type: none;
 }
 
-.column-content-list li {
-    margin-bottom: 5px;
-}
-
-.column-content-list li::before {
+.column-content-list li a::before {
     padding-right: 5px;
     font-family: FontAwesome;
     content: "\f00c";
     font-weight: 200;
     color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .column-content img {
+        margin: 0 30px 0 0;
+        padding-left: 0;
+    }
 }
 
 /** media query **/
@@ -284,5 +376,12 @@ footer img {
 
     .column-content-list li {
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .column-content img {
+        width: auto;
+        height: 120px;
     }
 }
