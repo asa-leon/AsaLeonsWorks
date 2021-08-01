@@ -77,7 +77,8 @@ header h1 {
     }
 
     header h1 {
-        font-size: 1.5rem;
+        padding-top: 22px;
+        font-size: 1.2rem;
     }
 }
 
@@ -191,7 +192,7 @@ footer {
     z-index: 10;
 }
 
-#footerContents {
+.footer-wrapper {
     display: flex;
     align-items: center;
     position: relative;
@@ -214,19 +215,25 @@ footer img {
     display: inline-block;
 }
 
-.divideFooterNavItems {
-    margin: 0 10px;
-}
-
 .footer-nav li a {
     color: #fff;
 }
 
+.divideFooterNavItems {
+    margin: 0 10px;
+}
+
 .copyright {
+    display: block;
     margin-bottom: 0;
-    text-align: right;
     position: absolute;
     right: 0;
+}
+
+@media (max-width: 992px) {
+    .footer-nav li a, .divideFooterNavItems, .copyright {
+        font-size: 0.8rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -234,8 +241,12 @@ footer img {
         width: 100px;
     }
 
+    .divideFooterNavItems {
+        margin: 0 5px;
+    }
+
     .copyright {
-        bottom: 0;
+        bottom: 5px;
     }
 }
 
@@ -243,13 +254,17 @@ footer img {
     footer img {
         width: 80px;
     }
-}
 
-@media (max-width: 992px) {
-    .footer-nav li a, .copyright {
-        font-size: 0.8rem;
+    .footer-nav li a, .divideFooterNavItems, .copyright {
+        font-size: 0.5rem;
+    }
+
+    .copyright {
+        position: unset;
     }
 }
+
+
 /*
 *
 * コラムページ
