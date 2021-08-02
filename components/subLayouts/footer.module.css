@@ -27,8 +27,8 @@
 
 
 .dropdownMenuButton button {
-    padding: 5px 15px;
-    font-size: 0.9rem;
+    padding: 5px 10px;
+    font-size: 0.7rem;
     font-weight: lighter;
 }
 
@@ -46,7 +46,7 @@
 
 .contacts p {
     margin-bottom: 0;
-    font-weight: bold;
+    font-weight: semi-bold;
     text-align: center;
 }
 
