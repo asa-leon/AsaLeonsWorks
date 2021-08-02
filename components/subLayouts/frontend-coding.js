@@ -18,7 +18,7 @@ export default function FrontendCoding() {
 						</video>
 						<ul className={`col-md-6 col-sm-12`}>
 							<div className={`${styles.listWithIcon} align-items-center`}>
-								<span className={styles.languageIcon}>CSS</span><li>コラムにマウスホバーした時の微動(CSS)コラムにマウスホバーした時の微動(CSS)</li>
+								<span className={styles.languageIcon}>CSS</span><li>コラムにマウスホバーした時の動作</li>
 							</div>
 
 							<div className={`${styles.listWithIcon} align-items-center`}>
@@ -34,6 +34,23 @@ export default function FrontendCoding() {
 					<div class="row">
 						<video
 							src="/videos/top_responsive.mov"
+							controls loop autoplay muted playsInline
+							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
+							id="columnSitePreview">
+						</video>
+						<ul className={`col-md-6 col-sm-12`}>
+							<div className={`${styles.listWithIcon} align-items-center`}>
+								<span className={styles.languageIcon}>Bootstrap/CSS</span><li>Bootstrapとメディアクエリを利用したレスポンシブ対応</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+
+				<div className={styles.fecVideoContent}>
+					<h2>個別ページのアニメーション</h2>
+					<div class="row">
+						<video
+							src="/videos/column_animation.mov"
 							controls loop autoplay muted playsInline
 							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
 							id="columnSitePreview">
