@@ -1,11 +1,13 @@
 .toLeft {
     padding-top: 15px;
+    min-height: 100vh;
     background-color: #130024;
 }
 
 .toRight {
     padding-left: 0;
     padding-right: 0;
+    min-height: 100vh;
     background-color: #3A3B3B;
 }
 
