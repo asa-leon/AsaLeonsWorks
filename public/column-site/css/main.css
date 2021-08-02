@@ -28,6 +28,13 @@ a:hover {
     }
 }
 
+@media (max-width: 576px) {
+    .heading h2 {
+        margin: 40px 0;
+        font-size: 1.25rem;
+    }
+}
+
 /* header */
 header {
     width: 100%;
@@ -78,7 +85,7 @@ header h1 {
 
     header h1 {
         padding-top: 22px;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -114,7 +121,7 @@ header h1 {
 }
 
 .card-body h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .banners-wrapper h2 {
@@ -356,6 +363,7 @@ footer img {
 }
 
 .column-content-list {
+    width: 100%;
     text-align: left;
     list-style-type: none;
 }
@@ -368,12 +376,8 @@ footer img {
     color: #aaa;
 }
 
-@media (max-width: 768px) {
-    .column-content img {
-        margin: 0 30px 0 0;
-        padding-left: 0;
-    }
-}
+
+
 
 /** media query **/
 @media (max-width: 992px) {
@@ -394,9 +398,34 @@ footer img {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+    .left-menu-nav {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
     .column-content img {
-        width: auto;
-        height: 120px;
+        max-width: 50%;
+        margin: 0 30px 0 0;
+        padding-left: 0;
+    }
+
+    .column-content-list {
+        max-width: 50%
+    }
+}
+
+@media (max-width: 576px) {
+    .column-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column-content img {
+        max-width: 100%;
+    }
+
+    .column-content-list {
+        max-width: 100%;
+        margin-top: 50px;
     }
 }
