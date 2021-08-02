@@ -1,5 +1,6 @@
 import { useGlobalContext } from '../../context/global'
 import styles from './main-content.module.css'
+import FrontendCoding from './frontend-coding'
 
 export default function MainContent() {
 
@@ -8,34 +9,7 @@ export default function MainContent() {
 	switch (titleNum) {
 		case '0': // Frontend Coding
 			return (
-				<>
-					<h1>Frontend Coding</h1>
-					<div class="fec-videos-wrapper">
-
-						<div class="fec-video-content">
-							<p>トップページのアニメーション（jQuery使用）</p>
-							<video 
-								src="/videos/top_page_animation.mov" 
-								width="1000px" height="576px" 
-								controls loop autoplay muted playsInline 
-								className={styles.htmlPreview} 
-								id="columnSitePreview">
-							</video>
-						</div>
-
-						<div class="fec-video-content">
-							<p>トップページのアニメーション（jQuery使用）</p>
-							<video 
-								src="/videos/top_responsive.mov" 
-								width="1000px" height="576px" 
-								controls loop autoplay muted playsInline 
-								className={styles.htmlPreview} 
-								id="columnSitePreview">
-							</video>
-						</div>
-
-					</div>
-				</>
+				<FrontendCoding></FrontendCoding>
 			)
 
 		case '1':
