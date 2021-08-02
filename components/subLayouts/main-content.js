@@ -3,31 +3,54 @@ import styles from './main-content.module.css'
 
 export default function MainContent() {
 
-	const [ {titleNum, setTitleNum} ] = useGlobalContext()
+	const [{ titleNum, setTitleNum }] = useGlobalContext()
 
 	switch (titleNum) {
-		case '0':
+		case '0': // Frontend Coding
 			return (
 				<>
-				<h1>{titleNum}</h1>
-				<p>Html based pag below.</p>
-				<iframe className={styles.htmlPreview} src="/column-site/index.html" id="columnSitePreview" frameBorder="0"></iframe>
+					<h1>Frontend Coding</h1>
+					<div class="fec-videos-wrapper">
+
+						<div class="fec-video-content">
+							<p>トップページのアニメーション（jQuery使用）</p>
+							<video 
+								src="/videos/top_page_animation.mov" 
+								width="1000px" height="576px" 
+								controls loop autoplay muted playsInline 
+								className={styles.htmlPreview} 
+								id="columnSitePreview">
+							</video>
+						</div>
+
+						<div class="fec-video-content">
+							<p>トップページのアニメーション（jQuery使用）</p>
+							<video 
+								src="/videos/top_responsive.mov" 
+								width="1000px" height="576px" 
+								controls loop autoplay muted playsInline 
+								className={styles.htmlPreview} 
+								id="columnSitePreview">
+							</video>
+						</div>
+
+					</div>
 				</>
 			)
 
 		case '1':
 			return (
 				<>
-				<h1>{titleNum}</h1>
-				<p>Descriptions here.</p>
+					<h1>{titleNum}</h1>
+					<p>Descriptions here.</p>
 				</>
 			)
 
 		case '2':
 			return (
 				<>
-				<h1>{titleNum}</h1>
-				<p>Descriptions here.</p>
+					<h1>{titleNum}</h1>
+					<p>Descriptions here.</p>
 				</>
 			)
 

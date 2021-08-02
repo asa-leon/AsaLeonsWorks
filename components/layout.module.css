@@ -6,6 +6,12 @@
 .toRight {
     padding-left: 0;
     padding-right: 0;
+    background-color: #3A3B3B;
+}
+
+.topMenuPosition {
+    position: sticky;
+    top: 0;
 }
 
 .mainWrapper .container {
@@ -17,9 +23,16 @@
 }
 
 /* Bootstrap extention */
+.breadcrumNav {
+    background-color: #3A3B3B !important;
+}
+
 
 .breadcrumNav ol {
-    background-color: transparent !important;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    background-color: #3A3B3B !important;
+    font-size: 0.8rem;
 }
 
 .breadcrumItem + .breadcrumItem::before {

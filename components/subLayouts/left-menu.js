@@ -11,7 +11,7 @@ export default function LeftMenu() {
 	const [ {titleNum, setTitleNum} ] = useGlobalContext()
 
 	return (
-		<>
+		<div className={styles.leftMenuPosition}>
 			<div className={styles.leftMenuTitle}>
 				<img src="/images/folderIcon.png" alt="icon of folder" />
 				<h1>Leon Mah's Work</h1>
@@ -35,6 +35,6 @@ export default function LeftMenu() {
 					<Nav.Link eventKey={2}><img src="/images/beatMakingIcon.png" alt="icon of html" />Beat Making</Nav.Link>
 				</Nav.Item>
 			</Nav>
-		</>
+		</div>
 	)
 }

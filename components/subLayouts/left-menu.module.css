@@ -1,3 +1,9 @@
+.leftMenuPosition {
+    position: sticky;
+    top: 15px;
+    left: 0;
+}
+
 .leftMenuTitle {
     display: flex;
     flex-direction: row;

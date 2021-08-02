@@ -22,21 +22,25 @@ export default function Layout({ children, home }) {
 	const [{ titleNum, setTitleNum }] = useGlobalContext()
 
 	return (
-		<>
+		<div className={styles.mainWrapper}>
 			<div className={"container-fluid"}>
 				<Row>
 
-					<section className={`${styles.toLeft} col-md-3 col-sm-4 vh-100`}>
+					<section className={`${styles.toLeft} col-md-3 col-sm-4`}>
 						<LeftMenuEmbed></LeftMenuEmbed>
 					</section>
 
-					<section className={`${styles.toRight} col-md-9 col-sm-8 vh-100`}>
-						<TopMenuEmbed></TopMenuEmbed>
+					<section className={`${styles.toRight} col-md-9 col-sm-8`}>
+						<div className={styles.topMenuPosition}>
+							<TopMenuEmbed></TopMenuEmbed>
 
-						<div className={`${styles.mainWrapper} container`}>
 							<Breadcrumb className={styles.breadcrumNav}>
 								<Breadcrumb.Item className={styles.breadcrumItem} href="/">Top</Breadcrumb.Item>
 							</Breadcrumb>
+						</div>
+
+						<div className={`${styles.mainWrapper} container`}>
+							
 
 							<article className={styles.mainContentsWrapper}>
 								<MainContentEmbed></MainContentEmbed>
@@ -49,6 +53,6 @@ export default function Layout({ children, home }) {
 			</div>
 
 			<FooterEmbed></FooterEmbed>
-		</>
+		</div>
 	)
 }
