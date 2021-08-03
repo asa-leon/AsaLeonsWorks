@@ -12,8 +12,9 @@
 }
 
 .fecVideoContent li {
+    margin-left: 1rem;
     font-size: 0.8rem;
-    list-style-type: none;
+    list-style-type: disc;
 }
 
 .listWithIcon {

@@ -40,7 +40,9 @@ export default function FrontendCoding() {
 						</video>
 						<ul className={`col-md-6 col-sm-12`}>
 							<div className={`${styles.listWithIcon} align-items-center`}>
-								<span className={styles.languageIcon}>Bootstrap/CSS</span><li>Bootstrapとメディアクエリを利用したレスポンシブ対応</li>
+								<span className={styles.languageIcon}>Bootstrap/CSS</span>
+								<li>画面横幅が狭まった時に、コラムや関連サイトのバナーの並び数を変更</li>
+								<li>同じく、フッターの要素の配置の変更</li>
 							</div>
 						</ul>
 					</div>
@@ -57,7 +59,24 @@ export default function FrontendCoding() {
 						</video>
 						<ul className={`col-md-6 col-sm-12`}>
 							<div className={`${styles.listWithIcon} align-items-center`}>
-								<span className={styles.languageIcon}>Bootstrap/CSS</span><li>Bootstrapとメディアクエリを利用したレスポンシブ対応</li>
+								<span className={styles.languageIcon}>CSS</span><li>画面左側のナビゲーションの位置固定</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+
+				<div className={styles.fecVideoContent}>
+					<h2>個別ページのレスポンシブ</h2>
+					<div class="row">
+						<video
+							src="/videos/column_responsive.mov"
+							controls loop autoplay muted playsInline
+							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
+							id="columnSitePreview">
+						</video>
+						<ul className={`col-md-6 col-sm-12`}>
+							<div className={`${styles.listWithIcon} align-items-center`}>
+								<span className={styles.languageIcon}>CSS</span><li>画面横幅が狭まった時に、ナビゲーションがコラム部分の下に移動</li>
 							</div>
 						</ul>
 					</div>
