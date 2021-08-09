@@ -1,5 +1,4 @@
 import { useGlobalContext } from '../../context/global'
-import styles from './main-content.module.css'
 import FrontendCoding from './frontend-coding'
 
 export default function MainContent() {

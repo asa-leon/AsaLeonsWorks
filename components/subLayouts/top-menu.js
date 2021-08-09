@@ -1,4 +1,4 @@
-import styles from './top-menu.module.css'
+import styles from './top-menu.module.scss'
 import { Nav, Tabs, Tab, Fade } from 'react-bootstrap'
 import MainContent from './main-content'
 import { useGlobalContext } from '../../context/global'

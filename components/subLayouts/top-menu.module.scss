@@ -1,5 +1,7 @@
+@import "/styles/_variables.scss";
+
 .topMenu {
-    background-color: #252627;
+    background-color: $theme_dark_gray;
 }
 
 .topMenu .nav-item {
@@ -9,7 +11,7 @@
 /* bootstrap extends */
 
 .nav-tabs {
-    border-bottom: 1px solid #3A3B3B;
+    border-bottom: 1px solid $theme_purple;
     padding-bottom: 1px;
 }
 
@@ -35,6 +37,6 @@
 .nav-tabs .nav-item.show .nav-link {
     height: 100%;
     color: #ffffff;
-    background-color: #3A3B3B;
+    background-color: $theme_purple;
     border-color: transparent;
 }

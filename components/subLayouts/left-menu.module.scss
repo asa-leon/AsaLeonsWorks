@@ -1,3 +1,5 @@
+@import "/styles/_variables.scss";
+
 .leftMenuPosition {
     position: sticky;
     top: 15px;
@@ -49,7 +51,7 @@
 }
 
 .leftMenuNavItems:hover {
-    background-color: #3a3b3bbe;
+    background-color: $theme_purple;
 }
 
 .leftMenuNavItems img {

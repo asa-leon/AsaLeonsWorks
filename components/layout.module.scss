@@ -1,14 +1,16 @@
+@import "/styles/variables";
+
 .toLeft {
     padding-top: 15px;
     min-height: 100vh;
-    background-color: #130024;
+    background-color: $theme_purple;
 }
 
 .toRight {
     padding-left: 0;
     padding-right: 0;
     min-height: 100vh;
-    background-color: #3A3B3B;
+    background-color: $theme_light_gray;
 }
 
 .topMenuPosition {
@@ -27,15 +29,15 @@
 
 /* Bootstrap extention */
 .breadcrumNav {
-    background-color: #3A3B3B !important;
-    box-shadow: 0px 5px 15px -10px #130024;
+    background-color: $theme_light_gray !important;
+    box-shadow: 0px 5px 15px -10px $theme_purple;
 }
 
 
 .breadcrumNav ol {
     padding-top: 5px;
     padding-bottom: 5px; 
-    background-color: #3A3B3B !important;
+    background-color: $theme_light_gray !important;
     font-size: 0.8rem;
 }
 

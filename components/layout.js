@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import styles from './layout.module.css'
+import styles from './layout.module.scss'
 import LeftMenuEmbed from './subLayouts/left-menu'
 import TopMenuEmbed from './subLayouts/top-menu'
 import MainContentEmbed from './subLayouts/main-content'
