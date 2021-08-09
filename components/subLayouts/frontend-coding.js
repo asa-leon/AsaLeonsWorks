@@ -6,13 +6,13 @@ export default function FrontendCoding() {
 	return (
 		<>
 			<h1>Frontend Coding</h1>
-			<div class="fec-videos-wrapper">
+			<div>
 				<div className={styles.fecVideoContent}>
 					<h2>トップページのアニメーション</h2>
-					<div class="row">
+					<div className="row">
 						<video
 							src="/videos/top_page_animation.mov"
-							controls loop autoplay muted playsInline
+							controls loop autoPlay muted playsInline
 							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
 							id="columnSitePreview">
 						</video>
@@ -31,10 +31,10 @@ export default function FrontendCoding() {
 
 				<div className={styles.fecVideoContent}>
 					<h2>トップページのレスポンシブ</h2>
-					<div class="row">
+					<div className="row">
 						<video
 							src="/videos/top_responsive.mov"
-							controls loop autoplay muted playsInline
+							controls loop autoPlay muted playsInline
 							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
 							id="columnSitePreview">
 						</video>
@@ -53,7 +53,7 @@ export default function FrontendCoding() {
 					<div class="row">
 						<video
 							src="/videos/column_animation.mov"
-							controls loop autoplay muted playsInline
+							controls loop autoPlay muted playsInline
 							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
 							id="columnSitePreview">
 						</video>
@@ -67,10 +67,10 @@ export default function FrontendCoding() {
 
 				<div className={styles.fecVideoContent}>
 					<h2>個別ページのレスポンシブ</h2>
-					<div class="row">
+					<div className="row">
 						<video
 							src="/videos/column_responsive.mov"
-							controls loop autoplay muted playsInline
+							controls loop autoPlay muted playsInline
 							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
 							id="columnSitePreview">
 						</video>
