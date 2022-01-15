@@ -1,0 +1,44 @@
+.toLeft {
+  padding-top: 15px;
+  min-height: 100vh;
+  background-color: #130024;
+}
+
+.toRight {
+  padding-left: 0;
+  padding-right: 0;
+  min-height: 100vh;
+  background-color: #3A3B3B;
+}
+
+.topMenuPosition {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.mainWrapper .container {
+  margin-left: 0;
+}
+
+.mainContentsWrapper {
+  /* anything it's needed.. */
+}
+
+/* Bootstrap extention */
+.breadcrumNav {
+  background-color: #3A3B3B !important;
+  box-shadow: 0px 5px 15px -10px #130024;
+}
+
+.breadcrumNav ol {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #3A3B3B !important;
+  font-size: 0.8rem;
+}
+
+.breadcrumItem + .breadcrumItem::before {
+  content: ">";
+}/*# sourceMappingURL=layout.module.css.map */

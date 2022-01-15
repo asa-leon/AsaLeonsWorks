@@ -1,0 +1,39 @@
+.topMenu {
+  background-color: #252627;
+}
+
+.topMenu .nav-item {
+  padding: 0;
+}
+
+/* bootstrap extends */
+.nav-tabs {
+  border-bottom: 1px solid #130024;
+  padding-bottom: 1px;
+}
+
+.nav-tabs .nav-item {
+  border-left: transparent;
+  border-right: transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.nav-tabs .nav-item:not(:first-child, :last-child) {
+  border-left: 1px solid rgba(120, 120, 120, 0.8);
+  border-right: 1px solid rgba(120, 120, 120, 0.8);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+  border-color: transparent;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  height: 100%;
+  color: #ffffff;
+  background-color: #130024;
+  border-color: transparent;
+}/*# sourceMappingURL=top-menu.module.css.map */

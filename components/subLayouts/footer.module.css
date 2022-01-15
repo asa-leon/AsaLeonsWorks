@@ -1,0 +1,74 @@
+/* properties for footer */
+.footer {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  align-items: center;
+  bottom: 0;
+  padding: 5px 15px;
+  background-color: #A1A1A1;
+  font-size: 0.8rem;
+  z-index: 10;
+}
+
+#copyright {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  #copyright {
+    text-align: center;
+  }
+}
+/* bootstrap extends */
+.footer .footerRow {
+  align-items: center;
+}
+
+.dropdownMenuButton button {
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  font-weight: lighter;
+}
+
+@media (max-width: 900px) {
+  .dropdownMenuButton button {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 768px) {
+  .dropdownMenuButton {
+    width: 100%;
+  }
+}
+.contacts p {
+  margin-bottom: 0;
+  font-weight: semi-bold;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .upperContact {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  .upperContact {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 768px) {
+  .lowerContact {
+    display: none;
+  }
+}
+.copyright {
+  padding-left: 0;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .copyright {
+    text-align: center;
+  }
+}/*# sourceMappingURL=footer.module.css.map */

@@ -1,0 +1,64 @@
+.leftMenuPosition {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 15px;
+  left: 0;
+}
+
+.leftMenuTitle {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftMenuTitle h1 {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .leftMenuTitle h1 {
+    font-size: 1rem;
+  }
+}
+.leftMenuTitle img {
+  width: 20px;
+  height: 20px;
+}
+
+.leftMenuNavItems {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 -15px;
+}
+
+.leftMenuNavItems img {
+  margin-right: 15px;
+  margin-left: 30px;
+}
+
+.leftMenuNavItems a {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .leftMenuNavItems a {
+    font-size: 0.8rem;
+  }
+}
+.leftMenuNavItems:hover {
+  background-color: #130024;
+}
+
+.leftMenuNavItems img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 575px) {
+  .leftMenuTitle img,
+.leftMenuNavItems img {
+    display: none;
+  }
+}/*# sourceMappingURL=left-menu.module.css.map */

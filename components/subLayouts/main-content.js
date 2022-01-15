@@ -1,5 +1,6 @@
 import { useGlobalContext } from '../../context/global'
 import FrontendCoding from './frontend-coding'
+import PHP from './php'
 
 export default function MainContent() {
 
@@ -11,11 +12,10 @@ export default function MainContent() {
 				<FrontendCoding></FrontendCoding>
 			)
 
-		case '1':
+		case '1': // PHP
 			return (
 				<>
-					<h1>{titleNum}</h1>
-					<p>Descriptions here.</p>
+					<PHP></PHP>
 				</>
 			)
 
