@@ -34,7 +34,7 @@ export default function Footer() {
 
 					<Col lg={7} md={7} className={styles.contacts}>
 						<p className={styles.upperContact}>
-							Contacts = [ E-Mail: <a href="mailto:#">"test@example.com"</a>, Soundcloud: "<a href="#">account information</a>" ]
+							Contacts = [ E-Mail: &quot;<a href="mailto:#">test@example.com&quot;</a>, Soundcloud: &quot;<a href="#">account information</a>&quot; ]
 						</p>
 						<p className={styles.lowerContact}>
 							Contact() -&gt; [ <a href="mailto:#"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a>, <a href="#"><FontAwesomeIcon icon={faSoundcloud}></FontAwesomeIcon></a> ]

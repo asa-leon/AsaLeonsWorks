@@ -50,7 +50,7 @@ export default function FrontendCoding() {
 
 				<div className={styles.fecVideoContent}>
 					<h2>個別ページのアニメーション</h2>
-					<div class="row">
+					<div className="row">
 						<video
 							src="/videos/column_animation.mov"
 							controls loop autoPlay muted playsInline
