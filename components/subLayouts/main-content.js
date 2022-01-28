@@ -1,6 +1,6 @@
 import { useGlobalContext } from '../../context/global'
 import FrontendCoding from './frontend-coding'
-import PHP from './php'
+import PHPCoding from './php'
 
 export default function MainContent() {
 
@@ -14,9 +14,7 @@ export default function MainContent() {
 
 		case '1': // PHP
 			return (
-				<>
-					<PHP></PHP>
-				</>
+				<PHPCoding></PHPCoding>
 			)
 
 		case '2':

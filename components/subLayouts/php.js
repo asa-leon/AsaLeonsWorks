@@ -2,7 +2,7 @@ import styles from './main-content.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHtml5, faCss3, } from '@fortawesome/free-brands-svg-icons'
 
-export default function FrontendCoding() {
+export default function PHPCoding() {
 	return (
 		<>
 			<h1>PHP</h1>
