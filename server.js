@@ -7,8 +7,8 @@ const app = next({ dev: true });
 const handle = app.getRequestHandler();
 
 const httpsOptions = {
-  key: fs.readFileSync('./certificates/localhost.key'),
-  cert: fs.readFileSync('./certificates/localhost.crt'),
+  key: fs.readFileSync('/etc/letsencrypt/live/www.asa-leon.works/privkey.pem'),
+  cert: fs.readFileSync('/etc/letsencrypt/live/www.asa-leon.works/cert.pem'),
 };
 
 app.prepare().then(() => {
@@ -18,6 +18,6 @@ app.prepare().then(() => {
     handle(req, res, reqUrl);
   }).listen(443, (err) => {
     if (err) throw err;
-    console.log('> Ready on https://dev.example.com/');
+    console.log('> Ready on https://www.asa-leon.works/');
   });
 });
