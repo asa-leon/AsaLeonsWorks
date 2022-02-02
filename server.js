@@ -1,30 +1,23 @@
-const { createServer } = require('http')
-const { parse } = require('url')
-const next = require('next')
+const { createServer } = require('https');
+const { URL } = require('url');
+const next = require('next');
+const fs = require('fs');
 
-const dev = process.env.NODE_ENV !== 'production'
-const hostname = 'localhost'
-const port = 3000
-// when using middleware `hostname` and `port` must be provided below
-const app = next({ dev, hostname, port })
-const handle = app.getRequestHandler()
+const app = next({ dev: true });
+const handle = app.getRequestHandler();
+
+const httpsOptions = {
+  key: fs.readFileSync('./certificates/localhost.key'),
+  cert: fs.readFileSync('./certificates/localhost.crt'),
+};
 
 app.prepare().then(() => {
-  createServer((req, res) => {
-    // Be sure to pass `true` as the second argument to `url.parse`.
-    // This tells it to parse the query portion of the URL.
-    const parsedUrl = parse(req.url, true)
-    const { pathname, query } = parsedUrl
-
-    if (pathname === '/a') {
-      app.render(req, res, '/a', query)
-    } else if (pathname === '/b') {
-      app.render(req, res, '/b', query)
-    } else {
-      handle(req, res, parsedUrl)
-    }
-  }).listen(port, (err) => {
-    if (err) throw err
-    console.log(`> Ready on http://${hostname}:${port}`)
-  })
-})
+  createServer(httpsOptions, (req, res) => {
+    const baseURL = 'https://' + req.headers.host + '/';
+    const reqUrl = new URL(req.url, baseURL);
+    handle(req, res, reqUrl);
+  }).listen(443, (err) => {
+    if (err) throw err;
+    console.log('> Ready on https://dev.example.com/');
+  });
+});
