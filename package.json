@@ -1,10 +1,10 @@
 {
-  "name": "mah-leons-work",
+  "name": "asa-leons-works",
   "version": "0.2.1",
   "private": true,
   "scripts": {
     "dev": "node server.js",
-    "dev:https": "HTTPS=true node sever.js",
+    "dev:https": "HTTPS=true node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
