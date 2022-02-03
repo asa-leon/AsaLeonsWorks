@@ -42,7 +42,7 @@ export default function Footer() {
         			</Col>
 
 					<Col lg={3} md={3} className={styles.copyright}>
-						<small>&copy; Leon Mah, All Rights Reserved.</small>
+						<small>&copy; Asa Leon, All Rights Reserved.</small>
 					</Col>
 
 				</Row>
