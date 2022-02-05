@@ -19,7 +19,7 @@ export default function LeftMenu() {
 			<Nav
 			variant="pills"
 			activeKey={titleNum} 
-			className="flex-column"
+			className="flex-column d-none d-sm-flex"
 			onSelect={ (k) => setTitleNum(k) }
 			>
 				<Nav.Item className={styles.leftMenuNavItems}>

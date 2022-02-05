@@ -4,33 +4,61 @@
     padding-top: 15px;
     min-height: 100vh;
     background-color: $theme_purple;
+
+    @media (max-width: 575px) {
+        padding-top: 10px;
+        min-height: 42px;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
 }
 
 .leftMenuPosition {
-    position: sticky;
+    position: fixed;
     top: 15px;
-    left: 0;
+    z-index: 10;
+    width: 100%;
+
+    @media (max-width: 575px) {
+        position: absolute;
+        top: 12px;
+    }
 }
 
 .toRight {
     padding-left: 0;
     padding-right: 0;
+    width: 100%;
     min-height: 100vh;
     background-color: $theme_light_gray;
 }
 
 .topMenuPosition {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
+    width: 100%;
+
+    @media (max-width: 575px) {
+        top: 40px;
+    }
 }
 
+.mainWrapper {
+
+    @media (max-width: 575px) {
+        position: sticky;
+        top: 130px;
+        z-index: 0;
+    }
+}
 .mainWrapper .container {
     margin-left: 0;
 }
 
 .mainContentsWrapper {
-    /* anything it's needed.. */
+    padding-top: 82px;
 }
 
 /* Bootstrap extention */
