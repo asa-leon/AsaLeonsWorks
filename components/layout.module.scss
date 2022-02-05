@@ -4,12 +4,20 @@
     padding-top: 15px;
     min-height: 100vh;
     background-color: $theme_purple;
+
+    @media (max-width: 575px) {
+        min-height: 42px;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+    }
 }
 
 .leftMenuPosition {
     position: sticky;
     top: 15px;
     left: 0;
+    z-index: 10;
 }
 
 .toRight {
@@ -23,8 +31,19 @@
     position: sticky;
     top: 0;
     z-index: 10;
+
+    @media (max-width: 575px) {
+        top: 42px;
+    }
 }
 
+.mainWrapper {
+    @media (max-width: 575px) {
+        position: sticky;
+        top: 130px;
+        z-index: 0;
+    }
+}
 .mainWrapper .container {
     margin-left: 0;
 }

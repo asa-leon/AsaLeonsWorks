@@ -24,7 +24,7 @@ export default function Layout({ children, home }) {
 	return (
 		<div className={styles.mainWrapper}>
 			<div className={"container-fluid"}>
-				<Row>
+				<div className="row row-cols-sm-1">
 
 					<section className={`${styles.toLeft} col-md-3 col-sm-4`}>
 					<div className={styles.leftMenuPosition}>
@@ -42,14 +42,13 @@ export default function Layout({ children, home }) {
 						</div>
 
 						<div className={`${styles.mainWrapper} container`}>
-							
 
 							<article className={styles.mainContentsWrapper}>
 								<MainContentEmbed></MainContentEmbed>
 							</article>
 						</div>
 					</section>
-				</Row>
+				</div>
 
 
 			</div>
