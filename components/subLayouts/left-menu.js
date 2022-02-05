@@ -14,8 +14,10 @@ export default function LeftMenu() {
 		<div className="leftMenu">
 			<div className={styles.leftMenuTitle}>
 				<img src="/images/folderIcon.png" alt="icon of folder" />
-				<h1>Asa Leon&apos; Works</h1>
+				<h1>Asa Leon&apos;s Works</h1>
 			</div>
+
+
 			<Nav
 			variant="pills"
 			activeKey={titleNum} 
