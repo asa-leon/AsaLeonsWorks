@@ -1,64 +1,50 @@
 @import "../styles/_variables.scss";
 
-.toLeft {
+.leftMenuWrapper {
     padding-top: 15px;
     min-height: 100vh;
     background-color: $theme_purple;
 
-    @media (max-width: 575px) {
-        padding-top: 10px;
-        min-height: 42px;
-        position: fixed;
-        top: 0;
-        z-index: 10;
-    }
-}
-
-.leftMenuPosition {
-    position: fixed;
-    top: 15px;
-    z-index: 10;
-    width: 100%;
-
-    @media (max-width: 575px) {
-        position: absolute;
-        top: 12px;
-    }
-}
-
-.toRight {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-    min-height: 100vh;
-    background-color: $theme_light_gray;
-}
-
-.topMenuPosition {
     position: fixed;
     top: 0;
+    left: 0;
+    z-index: 5;
+
+    @media (max-width: 575px) {
+        min-height: 42px;
+    }
+}
+
+.topMenuWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
     z-index: 10;
-    width: 100%;
+
+    padding-right: 0;
+    padding-left: 0;
+    background-color: $theme_light_gray;
+
+    @media (max-width: 575px) {
+        top: 42px;
+    }
+}
+
+.mainContentWrapper {   
+    z-index: 0;
+    padding-top: 80px;
 
     @media (max-width: 575px) {
         top: 40px;
     }
+
 }
 
-.mainWrapper {
-
-    @media (max-width: 575px) {
-        position: sticky;
-        top: 130px;
-        z-index: 0;
-    }
-}
-.mainWrapper .container {
-    margin-left: 0;
-}
-
-.mainContentsWrapper {
-    padding-top: 82px;
+.footerWrapper {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 20;
 }
 
 /* Bootstrap extention */
@@ -69,6 +55,7 @@
 
 
 .breadcrumNav ol {
+    margin-bottom: 0;
     padding-top: 5px;
     padding-bottom: 5px; 
     background-color: $theme_light_gray !important;

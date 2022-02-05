@@ -26,34 +26,31 @@ export default function Layout({ children, home }) {
 			<div className={"container-fluid"}>
 				<div className="row row-cols-sm-1">
 
-					<section className={`${styles.toLeft} col-md-3 col-sm-4`}>
-					<div className={styles.leftMenuPosition}>
+					<section className={`${styles.leftMenuWrapper} col-md-3 col-sm-4`}>
 						<LeftMenuEmbed></LeftMenuEmbed>
-					</div>
 					</section>
 
-					<section className={`${styles.toRight} col-md-9 col-sm-8`}>
-						<div className={styles.topMenuPosition}>
-							<TopMenuEmbed></TopMenuEmbed>
+					<section className={`${styles.topMenuWrapper} offset-md-3 col-md-9 offset-sm-4 col-sm-8`}>
+						<TopMenuEmbed></TopMenuEmbed>
 
-							<Breadcrumb className={styles.breadcrumNav}>
-								<Breadcrumb.Item className={styles.breadcrumItem} href="/">Top</Breadcrumb.Item>
-							</Breadcrumb>
-						</div>
-
-						<div className={`${styles.mainWrapper} container`}>
-
-							<article className={styles.mainContentsWrapper}>
-								<MainContentEmbed></MainContentEmbed>
-							</article>
-						</div>
+						<Breadcrumb className={styles.breadcrumNav}>
+						<Breadcrumb.Item className={styles.breadcrumItem} href="/">Top</Breadcrumb.Item>
+						</Breadcrumb>
 					</section>
+
+					<article className={`${styles.mainContentWrapper} offset-md-3 col-md-9 offset-sm-4 col-sm-8`}>
+						<div className="container">
+							<MainContentEmbed></MainContentEmbed>
+						</div>
+					</article>
 				</div>
 
 
 			</div>
 
-			<FooterEmbed></FooterEmbed>
+			<div className={styles.footerWrapper}>
+				<FooterEmbed></FooterEmbed>
+			</div>
 		</div>
 	)
 }
