@@ -11,7 +11,7 @@ export default function LeftMenu() {
 	const [ {titleNum, setTitleNum} ] = useGlobalContext()
 
 	return (
-		<div className={styles.leftMenuPosition}>
+		<div className="leftMenu">
 			<div className={styles.leftMenuTitle}>
 				<img src="/images/folderIcon.png" alt="icon of folder" />
 				<h1>Asa Leon&apos; Works</h1>

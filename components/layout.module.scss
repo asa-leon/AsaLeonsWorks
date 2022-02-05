@@ -6,6 +6,12 @@
     background-color: $theme_purple;
 }
 
+.leftMenuPosition {
+    position: sticky;
+    top: 15px;
+    left: 0;
+}
+
 .toRight {
     padding-left: 0;
     padding-right: 0;

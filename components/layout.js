@@ -10,7 +10,7 @@ import { useGlobalContext } from '../context/global'
 
 export default function Layout({ children, home }) {
 
-	if (process.browser) {
+	if (process.window) {
 		const navItems = document.getElementsByClassName('nav-link')
 		console.log(navItems)
 
@@ -27,7 +27,9 @@ export default function Layout({ children, home }) {
 				<Row>
 
 					<section className={`${styles.toLeft} col-md-3 col-sm-4`}>
+					<div className={styles.leftMenuPosition}>
 						<LeftMenuEmbed></LeftMenuEmbed>
+					</div>
 					</section>
 
 					<section className={`${styles.toRight} col-md-9 col-sm-8`}>
