@@ -37,7 +37,7 @@ export default function Footer() {
 							Contacts &#061; &#091; E-Mail&#058; &quot;<a href="mailto:#">asa-leon@gmail.com&quot;</a>, Soundcloud&#058; &quot;<a href="#">account information</a>&quot; &#093;
 						</p>
 						<p className={styles.lowerContact}>
-							Contact() -&gt; &#091; <a href="mailto:#"><FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon></a>, <a href="#"><FontAwesomeIcon icon={faSoundcloud}></FontAwesomeIcon></a> &#093;
+							Contact() -&gt; &#091; <a href="mailto:#"><FontAwesomeIcon icon={faEnvelope} /></a>, <a href="#"><FontAwesomeIcon icon={faSoundcloud} /></a> &#093;
 						</p>
         			</Col>
 
