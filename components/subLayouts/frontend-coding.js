@@ -1,14 +1,28 @@
 import styles from './main-content.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5, faCss3, } from '@fortawesome/free-brands-svg-icons'
+import { faWindowRestore } from '@fortawesome/free-regular-svg-icons'
 
 export default function FrontendCoding() {
 	return (
 		<>
 			<h1>Frontend Coding</h1>
+
+			<div className={styles.caption}>
+				<FontAwesomeIcon icon={faWindowRestore} />
+				<p>このアイコンをクリックすると、実際のページが開きます。</p>
+			</div>
+
 			<div>
-				<div className={styles.fecVideoContent}>
-					<h2>トップページのアニメーション</h2>
+				<article className={styles.fecVideoContent}>
+
+					<div className={styles.goToAnotherPageWrapper}>
+						<h2>トップページのアニメーション</h2>
+						
+						<a href="./column-site/index.html" target="_blank">
+							<FontAwesomeIcon icon={faWindowRestore} />
+						</a>
+					</div>
+
 					<div className="row">
 						<video
 							src="/videos/top_page_animation.mov"
@@ -27,10 +41,15 @@ export default function FrontendCoding() {
 							
 						</ul>
 					</div>
-				</div>
+				</article>
 
 				<div className={styles.fecVideoContent}>
-					<h2>トップページのレスポンシブ</h2>
+					<div className={styles.goToAnotherPageWrapper}>
+						<h2>トップページのレスポンシブ</h2>
+						<a href="./column-site/index.html" target="_blank">
+							<FontAwesomeIcon icon={faWindowRestore} />
+						</a>
+					</div>
 					<div className="row">
 						<video
 							src="/videos/top_responsive.mov"
@@ -49,7 +68,12 @@ export default function FrontendCoding() {
 				</div>
 
 				<div className={styles.fecVideoContent}>
-					<h2>個別ページのアニメーション</h2>
+					<div className={styles.goToAnotherPageWrapper}>
+						<h2>個別ページのアニメーション</h2>
+						<a href="./column-site/column1.html" target="_blank">
+							<FontAwesomeIcon icon={faWindowRestore} />
+						</a>
+					</div>
 					<div className="row">
 						<video
 							src="/videos/column_animation.mov"
@@ -66,7 +90,12 @@ export default function FrontendCoding() {
 				</div>
 
 				<div className={styles.fecVideoContent}>
-					<h2>個別ページのレスポンシブ</h2>
+					<div className={styles.goToAnotherPageWrapper}>
+						<h2>個別ページのレスポンシブ</h2>
+						<a href="./column-site/index.html" target="_blank">
+							<FontAwesomeIcon icon={faWindowRestore} />
+						</a>
+					</div>
 					<div className="row">
 						<video
 							src="/videos/column_responsive.mov"

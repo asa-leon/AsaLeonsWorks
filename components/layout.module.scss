@@ -33,6 +33,7 @@
 .mainContentWrapper {   
     z-index: 0;
     padding-top: 80px;
+    padding-bottom: 80px;
 
     @media (max-width: 575px) {
         top: 40px;

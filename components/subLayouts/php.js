@@ -1,14 +1,27 @@
 import styles from './main-content.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHtml5, faCss3, } from '@fortawesome/free-brands-svg-icons'
+import { faWindowRestore } from '@fortawesome/free-regular-svg-icons'
 
 export default function PHPCoding() {
 	return (
 		<>
-			<h1>PHP</h1>
+			<div className={styles.goToAnotherPageWrapper}>
+				<h1>PHP</h1>
+				<a href="http://localhost:8888/booking_seats/" target="_blank" rel="noreferrer">
+					<FontAwesomeIcon icon={faWindowRestore} />
+				</a>
+			</div>
+
+			<div className={styles.caption}>
+				<FontAwesomeIcon icon={faWindowRestore} />
+				<p>このアイコンをクリックすると、実際のページが開きます。</p>
+			</div>
+
 			<div>
 				<div className={styles.fecVideoContent}>
-					<h2>PHPを利用した、データベース上の空席の数の確認と減算</h2>
+
+					<h2>バックエンド：PHP、フロントエンド：Vue.jsのシステム</h2>
+
 					<div className="row">
 						<video
 							src="/videos/check_vacancy.mov"
