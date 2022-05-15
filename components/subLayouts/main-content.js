@@ -20,8 +20,8 @@ export default function MainContent() {
 		case '2':
 			return (
 				<>
-					<h1>{titleNum}</h1>
-					<p>Descriptions here.</p>
+					<h1>Beat Making</h1>
+					<p>鋭意作成中</p>
 				</>
 			)
 
