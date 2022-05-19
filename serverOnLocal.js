@@ -1,23 +1,46 @@
-const { createServer } = require('https');
-const { URL } = require('url');
-const next = require('next');
-const fs = require('fs');
+const express = require('express')
+const next = require('next')
+const https = require('https')
+const fs = require('fs')
 
-const app = next({ dev: true });
-const handle = app.getRequestHandler();
+const port = parseInt(process.env.PORT || '4300')
+const host = 'localhost'
+const dev = process.env.NODE_ENV !== 'production'
 
-const httpsOptions = {
-  key: fs.readFileSync('./certificates/localhost.key'),
-  cert: fs.readFileSync('./certificates/localhost.crt'),
-};
+const app = next({ dev, port, host })
 
-app.prepare().then(() => {
-  createServer(httpsOptions, (req, res) => {
-    const baseURL = 'https://' + req.headers.host + '/';
-    const reqUrl = new URL(req.url, baseURL);
-    handle(req, res, reqUrl);
-  }).listen(30443, (err) => {
-    if (err) throw err;
-    console.log('> Ready on https://localhost:30443/');
-  });
-});
+const handle = app.getRequestHandler()
+
+app.prepare().then(async () => {
+
+	const expressApp = express()
+
+	expressApp.get('*', (req, res) => handle(req, res))
+
+	// Use https if https option enabled
+	const hasCertificates = 
+		fs.existsSync('./certificates/localhost-key.pem') &&
+		fs.existsSync('./certificates/localhost.pem')
+
+	const useHttps =
+		process.env.HTTPS === 'true' && hasCertificates
+
+	if (useHttps) {
+
+		const options = {
+			key: fs.readFileSync('./certificates/localhost-key.pem'),
+			cert: fs.readFileSync('./certificates/localhost.pem')
+		}
+
+		const server = https.createServer(options, expressApp)
+		server.listen(port, host)
+
+		console.log(`> Ready on https://${host}:${port}`)
+
+	} else {
+
+		expressApp.listen(port, host)
+
+		console.log(`> Ready on http://${host}:${port}`)
+	}
+})

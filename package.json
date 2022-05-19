@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "node server.js",
-    "local-dev": "next dev",
+    "local-dev": "HTTPS=true node ./serverOnLocal.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js",
-    "start-dev": "node serverOnLocal.js",
+    "start-dev": "NODE_ENV=production node ./serverOnLocal.js",
     "lint": "next lint"
   },
   "dependencies": {
