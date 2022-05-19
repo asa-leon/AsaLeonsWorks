@@ -3,11 +3,11 @@
   "version": "0.3.1",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
-    "local-dev": "next dev",
+    "dev": "node ./server.js",
+    "local-dev": "node ./serverOnLocal.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "start-dev": "node serverOnLocal.js",
+    "start": "NODE_ENV=production HTTPS=true node ./server.js",
+    "start-dev": "NODE_ENV=production node ./serverOnLocal.js",
     "lint": "next lint"
   },
   "dependencies": {
