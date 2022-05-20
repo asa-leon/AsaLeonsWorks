@@ -3,7 +3,7 @@ const next = require('next')
 const https = require('https')
 const fs = require('fs')
 
-const port = parseInt(process.env.PORT || '37415')
+const port = parseInt(process.env.PORT || '443')
 const host = 'asa-leon.works'
 const dev = process.env.NODE_ENV !== 'production'
 
