@@ -1,12 +1,12 @@
 const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
 
-/*const ContentSecurityPolicy = `
-  default-src 'self' *.asa-leon.works;
-  script-src 'self' *.asa-leon.works;
-  child-src 'self' *.asa-leon.works;
-  style-src 'self' *.asa-leon.works;
-  font-src 'self' *.asa-leon.works;
-`*/
+const ContentSecurityPolicy = `
+  default-src 'self' https://*.asa-leon.works:443;
+  script-src 'self' https://*.asa-leon.works:443;
+  child-src 'self' https://*.asa-leon.works:443;
+  style-src 'self' https://*.asa-leon.works:443;
+  font-src 'self' https://*.asa-leon.works:443;
+`
 // security headers
 const securityHeaders = [
 /*	{
