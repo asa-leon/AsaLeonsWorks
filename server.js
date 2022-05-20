@@ -19,8 +19,8 @@ app.prepare().then(async () => {
 
 	// Use https if https option enabled
 	const hasCertificates = 
-		fs.existsSync('./certificates/localhost-key.pem') && // change these paths as VPS server's
-		fs.existsSync('./certificates/localhost.pem') // change these paths as VPS server's
+		fs.existsSync('/etc/letsencrypt/live/www.asa-leon.works/privkey.pem') &&
+		fs.existsSync('/etc/letsencrypt/live/www.asa-leon.works/cert.pem')
 
 	const useHttps =
 		process.env.HTTPS === 'true' && hasCertificates
@@ -28,8 +28,8 @@ app.prepare().then(async () => {
 	if (useHttps) {
 
 		const options = {
-			key: fs.readFileSync('./certificates/localhost-key.pem'), // change these paths as VPS server's
-			cert: fs.readFileSync('./certificates/localhost.pem') // change these paths as VPS server's
+			key: fs.readFileSync('/etc/letsencrypt/live/www.asa-leon.works/privkey.pem'),
+			cert: fs.readFileSync('/etc/letsencrypt/live/www.asa-leon.works/cert.pem')
 		}
 
 		const server = https.createServer(options, expressApp)
