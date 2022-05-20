@@ -9,11 +9,10 @@ const ContentSecurityPolicy = `
 `
 // security headers
 const securityHeaders = [
-/*	{
+	{
 		key: 'Content-Security-Policy',
 		value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim()
 	},
-*/
 	{
 		key: 'X-DNS-Prefetch-Control',
 		value: 'on'
