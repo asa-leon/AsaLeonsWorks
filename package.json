@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "node ./server.js",
-    "local-dev": "node ./serverOnLocal.js",
+    "local-dev": "next dev",
     "build": "next build",
     "start": "NODE_ENV=production HTTPS=true node ./server.js",
     "start-dev": "NODE_ENV=production HTTPS=true node ./serverOnLocal.js",

@@ -43,14 +43,26 @@ const securityHeaders = [
 	}
 ]
 
-module.exports = {
-  // use security headers
-  async headers() {
-	return [
-		{
-			source: '/:path*',
-			headers: securityHeaders,
+module.exports = (phase, { defaultConfig }) => {
+	if (phase === PHASE_DEVELOPMENT_SERVER) {
+		return {
+			/* development only config options here */
+			reactStrictMode: true,
 		}
-	]
-  }
+	}
+
+	return {
+		/* config options for all phases except development here */
+		reactStrictMode: false,
+
+		// use security headers
+		async headers() {
+			return [
+				{
+					source: '/:path*',
+					headers: securityHeaders,
+				}
+			]
+		}
+	}
 }
