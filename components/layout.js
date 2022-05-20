@@ -22,6 +22,10 @@ export default function Layout({ children, home }) {
 	const [{ titleNum, setTitleNum }] = useGlobalContext()
 
 	return (
+		<>
+		<Head>
+			<title>Asa Leon&apos;s Wokrs</title>
+		</Head>
 		<div className={styles.mainWrapper}>
 			<div className={"container-fluid"}>
 				<div className="row row-cols-sm-1">
@@ -52,5 +56,6 @@ export default function Layout({ children, home }) {
 				<FooterEmbed></FooterEmbed>
 			</div>
 		</div>
+		</>
 	)
 }

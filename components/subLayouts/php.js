@@ -7,9 +7,6 @@ export default function PHPCoding() {
 		<>
 			<div className={styles.goToAnotherPageWrapper}>
 				<h1>PHP</h1>
-				<a href="http://localhost:8888/booking_seats/" target="_blank" rel="noreferrer">
-					<FontAwesomeIcon icon={faWindowRestore} />
-				</a>
 			</div>
 
 			<div className={styles.caption}>
@@ -19,9 +16,12 @@ export default function PHPCoding() {
 
 			<div>
 				<div className={styles.fecVideoContent}>
-
-					<h2>バックエンド：PHP、フロントエンド：Vue.jsのシステム</h2>
-
+					<div className={styles.goToAnotherPageWrapper}>
+						<h2>バックエンド：PHP、フロントエンド：Vue.jsのシステム</h2>
+						<a href="http://localhost:8888/" target="_blank" rel="noreferrer">
+							<FontAwesomeIcon icon={faWindowRestore} />
+						</a>
+					</div>
 					<div className="row">
 						<video
 							src="/videos/check_vacancy.mov"
@@ -42,7 +42,12 @@ export default function PHPCoding() {
 				</div>
 
 				<div className={styles.fecVideoContent}>
-					<h2>入力された数の正誤確認</h2>
+					<div className={styles.goToAnotherPageWrapper}>
+						<h2>入力された数の正誤確認</h2>
+						<a href="http://localhost:8888/" target="_blank" rel="noreferrer">
+							<FontAwesomeIcon icon={faWindowRestore} />
+						</a>
+					</div>
 					<div className="row">
 						<video
 							src="/videos/check_number.mov"
@@ -60,7 +65,12 @@ export default function PHPCoding() {
 				</div>
 
 				<div className={styles.fecVideoContent}>
-					<h2>必要な項目が入力または選択されいる事の判断</h2>
+					<div className={styles.goToAnotherPageWrapper}>
+						<h2>必要な項目が入力または選択されいる事の判断</h2>
+						<a href="http://localhost:8888/" target="_blank" rel="noreferrer">
+							<FontAwesomeIcon icon={faWindowRestore} />
+						</a>
+					</div>
 					<div className="row">
 						<video
 							src="/videos/check_input_and_selected.mov"

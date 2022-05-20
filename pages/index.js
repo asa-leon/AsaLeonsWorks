@@ -19,8 +19,6 @@ export default function Home() {
 		})
 	}
   return (
-    <Layout home>
-      
-    </Layout>
+    <Layout></Layout>
   )
 }
