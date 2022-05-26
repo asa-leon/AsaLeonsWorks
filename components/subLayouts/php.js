@@ -18,7 +18,7 @@ export default function PHPCoding() {
 				<div className={styles.fecVideoContent}>
 					<div className={styles.goToAnotherPageWrapper}>
 						<h2>バックエンド：PHP、フロントエンド：Vue.jsのシステム</h2>
-						<a href="http://localhost:8888/" target="_blank" rel="noreferrer">
+						<a href="https://booking.asa-leon.works:444/" target="_blank" rel="noreferrer">
 							<FontAwesomeIcon icon={faWindowRestore} />
 						</a>
 					</div>
@@ -44,7 +44,7 @@ export default function PHPCoding() {
 				<div className={styles.fecVideoContent}>
 					<div className={styles.goToAnotherPageWrapper}>
 						<h2>入力された数の正誤確認</h2>
-						<a href="http://localhost:8888/" target="_blank" rel="noreferrer">
+						<a href="https://booking.asa-leon.works:444" target="_blank" rel="noreferrer">
 							<FontAwesomeIcon icon={faWindowRestore} />
 						</a>
 					</div>
@@ -67,7 +67,7 @@ export default function PHPCoding() {
 				<div className={styles.fecVideoContent}>
 					<div className={styles.goToAnotherPageWrapper}>
 						<h2>必要な項目が入力または選択されいる事の判断</h2>
-						<a href="http://localhost:8888/" target="_blank" rel="noreferrer">
+						<a href="https://booking.asa-leon.works:444" target="_blank" rel="noreferrer">
 							<FontAwesomeIcon icon={faWindowRestore} />
 						</a>
 					</div>
