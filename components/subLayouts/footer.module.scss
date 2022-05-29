@@ -31,6 +31,12 @@
     font-weight: lighter;
 }
 
+.dropdown-item {
+	&:disabled {
+		color: #333;
+	}
+}
+
 @media (max-width: 900px) {
     .dropdownMenuButton button {
         font-size: 0.7rem;

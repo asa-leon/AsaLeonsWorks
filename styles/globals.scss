@@ -33,8 +33,7 @@ a {
 
 /* 'top-menu.module.css'で指定しきれない為、'globals.css'に記述 */
 .nav-tabs {
-  border-bottom: 1px solid $theme_light_gray;
-  padding-bottom: 1px;
+  border-bottom: 1px solid transparent;
 
   .nav-item {
     border-left: transparent;

@@ -24,11 +24,11 @@ export default function Footer() {
 						variant="secondary"
 						title='対応可能言語'
 					>
-						<Dropdown.Item eventKey="1">HTML</Dropdown.Item>
-						<Dropdown.Item eventKey="2">CSS</Dropdown.Item>
-						<Dropdown.Item eventKey="3">Javascript</Dropdown.Item>
-						<Dropdown.Item eventKey="4">PHP</Dropdown.Item>
-						<Dropdown.Item eventKey="5">Python</Dropdown.Item>
+						<Dropdown.Item disabled eventKey="1">HTML</Dropdown.Item>
+						<Dropdown.Item disabled eventKey="2">CSS</Dropdown.Item>
+						<Dropdown.Item disabled eventKey="3">Javascript</Dropdown.Item>
+						<Dropdown.Item disabled eventKey="4">PHP</Dropdown.Item>
+						<Dropdown.Item disabled eventKey="5">Python</Dropdown.Item>
 					</DropdownButton>
 					</Col>
 

@@ -2,6 +2,7 @@
 
 .topMenu {
     background-color: $theme_dark_gray;
+    box-shadow: 0px 5px 15px -10px $theme_purple;
 }
 
 .topMenu .nav-item {
@@ -11,7 +12,7 @@
 /* bootstrap extends */
 
 .nav-tabs {
-    border-bottom: 1px solid $theme_purple;
+	border-bottom: none;
     padding-bottom: 1px;
 }
 

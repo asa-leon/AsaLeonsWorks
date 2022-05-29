@@ -36,10 +36,6 @@ export default function Layout({ children, home }) {
 
 					<section className={`${styles.topMenuWrapper} offset-md-3 col-md-9 offset-sm-4 col-sm-8`}>
 						<TopMenuEmbed></TopMenuEmbed>
-
-						<Breadcrumb className={styles.breadcrumNav}>
-						<Breadcrumb.Item className={styles.breadcrumItem} href="/">Top</Breadcrumb.Item>
-						</Breadcrumb>
 					</section>
 
 					<article className={`${styles.mainContentWrapper} offset-md-3 col-md-9 offset-sm-4 col-sm-8`}>
