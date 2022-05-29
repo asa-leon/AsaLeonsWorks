@@ -16,12 +16,6 @@ export default function PHPCoding() {
 
 			<div>
 				<div className={styles.fecVideoContent}>
-					<div className={styles.goToAnotherPageWrapper}>
-						<h2>バックエンド：PHP、フロントエンド：Vue.jsのシステム</h2>
-						<a href="https://booking.asa-leon.works:444/" target="_blank" rel="noreferrer">
-							<FontAwesomeIcon icon={faWindowRestore} />
-						</a>
-					</div>
 					<div className="row">
 						<video
 							src="/videos/check_vacancy.mov"
@@ -42,12 +36,6 @@ export default function PHPCoding() {
 				</div>
 
 				<div className={styles.fecVideoContent}>
-					<div className={styles.goToAnotherPageWrapper}>
-						<h2>入力された数の正誤確認</h2>
-						<a href="https://booking.asa-leon.works:444" target="_blank" rel="noreferrer">
-							<FontAwesomeIcon icon={faWindowRestore} />
-						</a>
-					</div>
 					<div className="row">
 						<video
 							src="/videos/check_number.mov"
@@ -65,12 +53,6 @@ export default function PHPCoding() {
 				</div>
 
 				<div className={styles.fecVideoContent}>
-					<div className={styles.goToAnotherPageWrapper}>
-						<h2>必要な項目が入力または選択されいる事の判断</h2>
-						<a href="https://booking.asa-leon.works:444" target="_blank" rel="noreferrer">
-							<FontAwesomeIcon icon={faWindowRestore} />
-						</a>
-					</div>
 					<div className="row">
 						<video
 							src="/videos/check_input_and_selected.mov"
