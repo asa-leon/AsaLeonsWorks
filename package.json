@@ -7,7 +7,7 @@
     "local-dev": "next dev",
     "build": "next build",
     "start": "NODE_ENV=production HTTPS=true node ./server.js",
-    "start-dev": "NODE_ENV=production HTTPS=true node ./serverOnLocal.js",
+    "start-dev": "NODE_ENV=production node ./serverOnLocal.js",
     "lint": "next lint"
   },
   "dependencies": {
