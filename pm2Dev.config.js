@@ -4,7 +4,7 @@ module.exports = {
 					name: "Asa Leon's Works(8443) -dev",
 					script: "npm",
 					automation: false,
-					args: "run start-dev",
+					args: "run start-devServer",
 					cwd: '/usr/share/nginx/asa-leon.works/',
 					env: {
 							PORT: 8443,

@@ -22,10 +22,10 @@ app.prepare().then(async () => {
 		fs.existsSync('/etc/letsencrypt/live/www.asa-leon.works/privkey.pem') &&
 		fs.existsSync('/etc/letsencrypt/live/www.asa-leon.works/cert.pem')
 
-	const useHttps =
-		process.env.HTTPS === 'true' && hasCertificates
+	//const useHttps =
+	//	process.env.HTTPS === 'true' && hasCertificates
 
-	if (useHttps) {
+	if (hasCertificates) {
 
 		const options = {
 			key: fs.readFileSync('/etc/letsencrypt/live/www.asa-leon.works/privkey.pem'),
