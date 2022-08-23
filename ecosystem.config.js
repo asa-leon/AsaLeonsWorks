@@ -5,7 +5,7 @@ module.exports = {
 					script: "npm",
 					automation: false,
 					args: "run start-devServer",
-					cwd: '/usr/share/nginx/asa-leon.works/',
+					cwd: '/usr/share/nginx/html/asa-leon.works/',
 					env: {
 							PORT: 8443,
 							NODE_ENV: "development"
@@ -17,21 +17,23 @@ module.exports = {
 					watch: ["server", "client"],
 					// Delay between restart
 					ignore_watch: ["node_modules", "log"],
+					port: 37415,
 			}
 	],
 
 	deploy: {
 		production: {
-			key: "$HOME/.ssh/alwclient_rsa",
-			user: "macbookair",
-			host: ["macbookair.local"],
+			key: "/Users/macbookair/.ssh/alwclient_rsa",
+			user: "higako",
+			host: "164.70.92.32",
 			ssh_options: "StrictHostKeyChecking=no",
-			ref: "production/main",
-			repo: "higako@164.70.92.32:37415:higako/repo/alw.git",
+			ref: "origin/main",
+			repo: "https://github.com/asa-leon/AsaLeonsWorks.git",
 			path: "/usr/share/nginx/html/asa-leon.works",
+			'port': 37415,
 			'pre-setup': "yum install git ; ls -la",
 			'post-setup': "ls -la",
-			'pre-deploy-action': "echo 'This is a local executed command",
+			'pre-deploy-action': "echo 'This is a local executed command'",
 			'post-deploy': "npm install",
 		},
 	}
