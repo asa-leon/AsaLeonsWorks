@@ -5,7 +5,7 @@ module.exports = {
 					script: "npm",
 					automation: false,
 					args: "run start-newServer",
-					cwd: '/usr/share/nginx/html/asa-leon.works/',
+					cwd: '/usr/share/nginx/html/wwwnew.asa-leon.works/',
 					env: {
 							PORT: 8443,
 							NODE_ENV: "development"
