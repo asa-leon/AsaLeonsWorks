@@ -4,8 +4,8 @@ module.exports = {
 					name: "Asa Leon's Works(8443) -Production",
 					script: "npm",
 					automation: false,
-					args: "run start-newServer",
-					cwd: '/usr/share/nginx/html/wwwnew.asa-leon.works/',
+					args: "run start-prodServer",
+					cwd: '/usr/share/nginx/html/www.asa-leon.works/',
 					env: {
 							PORT: 8443,
 							NODE_ENV: "development"

@@ -19,16 +19,16 @@ app.prepare().then(async () => {
 
     // Use https if https option enabled
     const hasCertificates =
-        fs.existsSync('/etc/letsencrypt/live/wwwnew.asa-leon.works/privkey.pem') &&
-        fs.existsSync('/etc/letsencrypt/live/wwwnew.asa-leon.works/fullchain.pem')
+        fs.existsSync('/etc/letsencrypt/live/www.asa-leon.works/privkey.pem') &&
+        fs.existsSync('/etc/letsencrypt/live/www.asa-leon.works/fullchain.pem')
 
     const useHttps =
         process.env.HTTPS === 'true' && hasCertificates
 
 
     const options = {
-        key: fs.readFileSync('/etc/letsencrypt/live/wwwnew.asa-leon.works/privkey.pem'),
-        cert: fs.readFileSync('/etc/letsencrypt/live/wwwnew.asa-leon.works/fullchain.pem')
+        key: fs.readFileSync('/etc/letsencrypt/live/www.asa-leon.works/privkey.pem'),
+        cert: fs.readFileSync('/etc/letsencrypt/live/www.asa-leon.works/fullchain.pem')
     }
 
     const server = https.createServer(options, expressApp)
