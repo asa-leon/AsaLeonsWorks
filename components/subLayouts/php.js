@@ -20,7 +20,7 @@ export default function PHPCoding() {
 					<div className={styles.goToAnotherPageWrapper}>
 						<h2>入力値とデータベースの値の比較</h2>
 						
-						<a href="https://bookingnew.asa-leon.works/" target="_blank" rel="noreferrer">
+						<a href="https://booking.asa-leon.works/" target="_blank" rel="noreferrer">
 							<FontAwesomeIcon icon={faWindowRestore} />
 						</a>
 					</div>
@@ -49,7 +49,7 @@ export default function PHPCoding() {
 					<div className={styles.goToAnotherPageWrapper}>
 						<h2>入力される数値に応じたメッセージ変更</h2>
 						
-						<a href="https://bookingnew.asa-leon.works/" target="_blank" rel="noreferrer">
+						<a href="https://booking.asa-leon.works/" target="_blank" rel="noreferrer">
 							<FontAwesomeIcon icon={faWindowRestore} />
 						</a>
 					</div>
@@ -75,7 +75,7 @@ export default function PHPCoding() {
 					<div className={styles.goToAnotherPageWrapper}>
 						<h2>確認ボタンの活性化判断</h2>
 						
-						<a href="https://bookingnew.asa-leon.works/" target="_blank" rel="noreferrer">
+						<a href="https://booking.asa-leon.works/" target="_blank" rel="noreferrer">
 							<FontAwesomeIcon icon={faWindowRestore} />
 						</a>
 					</div>
