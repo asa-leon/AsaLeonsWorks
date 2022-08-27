@@ -19,8 +19,8 @@ app.prepare().then(async () => {
 
     // Use https if https option enabled
     const hasCertificates =
-        fs.existsSync('/etc/letsencrypt/live/www.asa-leon.works/privkey.pem') &&
-        fs.existsSync('/etc/letsencrypt/live/www.asa-leon.works/fullchain.pem')
+        fs.existsSync('../live/www.asa-leon.works/privkey.pem') &&
+        fs.existsSync('../live/www.asa-leon.works/fullchain.pem')
 
     const useHttps =
         process.env.HTTPS === 'true' && hasCertificates
