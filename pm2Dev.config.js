@@ -1,11 +1,11 @@
 module.exports = {
 	apps: [
 			{
-					name: "Asa Leon's Works(8443) -dev",
+					name: "Asa Leon's Works(8443) -Development",
 					script: "npm",
 					automation: false,
 					args: "run start-devServer",
-					cwd: '/usr/share/nginx/asa-leon.works/',
+					cwd: '/usr/share/nginx/html/wwwdev.asa-leon.works/',
 					env: {
 							PORT: 8443,
 							NODE_ENV: "development"
