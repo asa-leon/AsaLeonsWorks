@@ -7,7 +7,7 @@
 		"build": "next build",
 		"start": "NODE_ENV=production HTTPS=true node ./server.js",
 		"start-local": "NODE_ENV=production node ./serverOnLocal.js",
-		"start-devServer": "NODE_ENV=production node ./devServer.js",
+		"start-devServer": "NODE_ENV=development node ./devServer.js",
 		"start-prodServer": "NODE_ENV=production node ./prodServer.js",
 		"lint": "next lint"
 	},

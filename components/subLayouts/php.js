@@ -2,6 +2,8 @@ import styles from './main-content.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWindowRestore } from '@fortawesome/free-regular-svg-icons'
 
+const { PHASE_DEVELOPMENT_SERVER } = require('next/constants')
+
 export default function PHPCoding() {
 	return (
 		<>
@@ -20,9 +22,17 @@ export default function PHPCoding() {
 					<div className={styles.goToAnotherPageWrapper}>
 						<h2>入力値とデータベースの値の比較</h2>
 						
-						<a href="https://booking.asa-leon.works/" target="_blank" rel="noreferrer">
-							<FontAwesomeIcon icon={faWindowRestore} />
-						</a>
+						{(process.env.NODE_ENV !== 'production')
+						?
+							<a href="192.168.57.101" target="_blank" rel="noreferrer">
+								<FontAwesomeIcon icon={faWindowRestore} />
+							</a>
+
+						:
+							<a href="https://booking.asa-leon.works/" target="_blank" rel="noreferrer">
+								<FontAwesomeIcon icon={faWindowRestore} />
+							</a>
+						}
 					</div>
 
 					<div className="row">
