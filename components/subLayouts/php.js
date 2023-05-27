@@ -24,7 +24,7 @@ export default function PHPCoding() {
 						
 						{(process.env.NODE_ENV !== 'production')
 						?
-							<a href="192.168.57.101" target="_blank" rel="noreferrer">
+							<a href="https://192.168.56.101" target="_blank" rel="noreferrer">
 								<FontAwesomeIcon icon={faWindowRestore} />
 							</a>
 
