@@ -9,7 +9,7 @@ export default function FrontendCoding() {
 
 			<div className={styles.caption}>
 				<FontAwesomeIcon icon={faWindowRestore} />
-				<p>このアイコンをクリックすると、実際のページが開きます。</p>
+				<p>このアイコンをクリックすると、モックアップサイトを閲覧できます。</p>
 			</div>
 
 			<div>
@@ -48,7 +48,7 @@ export default function FrontendCoding() {
 				<div className={styles.fecVideoContent}>
 					<div className={styles.goToAnotherPageWrapper}>
 						<h2>子ページのCSSを利用した挙動</h2>
-						<a href="./mockup-site/column1.html" target="_blank">
+						<a href="./mockup-site/child-page.html" target="_blank">
 							<FontAwesomeIcon icon={faWindowRestore} />
 						</a>
 					</div>

@@ -13,7 +13,7 @@ export default function PHPCoding() {
 
 			<div className={styles.caption}>
 				<FontAwesomeIcon icon={faWindowRestore} />
-				<p>このアイコンをクリックすると、実際のページが開きます。</p>
+				<p>このアイコンをクリックすると、モックアップサイトを閲覧できます。</p>
 			</div>
 
 			<div>
