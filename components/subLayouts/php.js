@@ -37,7 +37,7 @@ export default function PHPCoding() {
 
 					<div className="row">
 						<video
-							src="/videos/check_vacancy.mov"
+							src="/movies/check_vacancy.mov"
 							controls loop autoPlay muted playsInline
 							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
 							id="columnSitePreview">
@@ -66,7 +66,7 @@ export default function PHPCoding() {
 
 					<div className="row">
 						<video
-							src="/videos/check_number.mov"
+							src="/movies/check_number.mov"
 							controls loop autoPlay muted playsInline
 							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
 							id="columnSitePreview">
@@ -92,7 +92,7 @@ export default function PHPCoding() {
 
 					<div className="row">
 						<video
-							src="/videos/check_input_and_selected.mov"
+							src="/movies/check_input_and_selected.mov"
 							controls loop autoPlay muted playsInline
 							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
 							id="columnSitePreview">

@@ -16,96 +16,59 @@ export default function FrontendCoding() {
 				<article className={styles.fecVideoContent}>
 
 					<div className={styles.goToAnotherPageWrapper}>
-						<h2>トップページのアニメーション</h2>
+						<h2>トップページのCSSとjQueryを利用した挙動</h2>
 						
-						<a href="./column-site/index.html" target="_blank">
+						<a href="./mockup-site/index.html" target="_blank">
 							<FontAwesomeIcon icon={faWindowRestore} />
 						</a>
 					</div>
 
 					<div className="row">
 						<video
-							src="/videos/top_page_animation.mov"
+							src="/movies/top_page.mov"
 							controls loop autoPlay muted playsInline
 							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
 							id="columnSitePreview">
 						</video>
 						<ul className={`col-md-6 col-sm-12`}>
 							<div className={`${styles.listWithIcon} align-items-center`}>
-								<span className={styles.languageIcon}>CSS</span><li>コラムにマウスホバーした時の動作</li>
+								<span className={styles.languageIcon}>CSS</span><li>タイトルのエリアにカーソルが来た時の動作</li>
 							</div>
-
 							<div className={`${styles.listWithIcon} align-items-center`}>
-								<span className={styles.languageIcon}>jQuery</span><li>ページトップへ戻る動作</li>
+								<span className={styles.languageIcon}>jQuery</span><li>ページのトップへ戻る動作</li>
 							</div>
-							
+							<div className={`${styles.listWithIcon} align-items-center`}>
+								<span className={styles.languageIcon}>Bootstrap/CSS</span>
+								<li>画面横幅が狭まった時に、タイトルの幅や並び数を変化させる</li>
+							</div>
 						</ul>
 					</div>
 				</article>
 
 				<div className={styles.fecVideoContent}>
 					<div className={styles.goToAnotherPageWrapper}>
-						<h2>トップページのレスポンシブ</h2>
-						<a href="./column-site/index.html" target="_blank">
+						<h2>子ページのCSSを利用した挙動</h2>
+						<a href="./mockup-site/column1.html" target="_blank">
 							<FontAwesomeIcon icon={faWindowRestore} />
 						</a>
 					</div>
 					<div className="row">
 						<video
-							src="/videos/top_responsive.mov"
+							src="/movies/child_page.mov"
 							controls loop autoPlay muted playsInline
 							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
 							id="columnSitePreview">
 						</video>
 						<ul className={`col-md-6 col-sm-12`}>
 							<div className={`${styles.listWithIcon} align-items-center`}>
-								<span className={styles.languageIcon}>Bootstrap/CSS</span>
-								<li>画面横幅が狭まった時に、コラムや関連サイトのバナーの並び数を変更</li>
-								<li>同じく、フッターの要素の配置の変更</li>
+								<span className={styles.languageIcon}>CSS</span><li>タイトルや記事にカーソルが来た時の動作</li>
 							</div>
-						</ul>
-					</div>
-				</div>
-
-				<div className={styles.fecVideoContent}>
-					<div className={styles.goToAnotherPageWrapper}>
-						<h2>個別ページのアニメーション</h2>
-						<a href="./column-site/column1.html" target="_blank">
-							<FontAwesomeIcon icon={faWindowRestore} />
-						</a>
-					</div>
-					<div className="row">
-						<video
-							src="/videos/column_animation.mov"
-							controls loop autoPlay muted playsInline
-							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
-							id="columnSitePreview">
-						</video>
-						<ul className={`col-md-6 col-sm-12`}>
 							<div className={`${styles.listWithIcon} align-items-center`}>
 								<span className={styles.languageIcon}>CSS</span><li>画面左側のナビゲーションの位置固定</li>
 							</div>
-						</ul>
-					</div>
-				</div>
-
-				<div className={styles.fecVideoContent}>
-					<div className={styles.goToAnotherPageWrapper}>
-						<h2>個別ページのレスポンシブ</h2>
-						<a href="./column-site/index.html" target="_blank">
-							<FontAwesomeIcon icon={faWindowRestore} />
-						</a>
-					</div>
-					<div className="row">
-						<video
-							src="/videos/column_responsive.mov"
-							controls loop autoPlay muted playsInline
-							className={`${styles.htmlPreview} col-md-6 col-sm-12`}
-							id="columnSitePreview">
-						</video>
-						<ul className={`col-md-6 col-sm-12`}>
 							<div className={`${styles.listWithIcon} align-items-center`}>
-								<span className={styles.languageIcon}>CSS</span><li>画面横幅が狭まった時に、ナビゲーションがコラム部分の下に移動</li>
+								<span className={styles.languageIcon}>Bootstrap/CSS</span>
+								<li>画面横幅が狭まった時に、左側のナビゲーションと記事リストの幅や並び方を変化させる</li>
 							</div>
 						</ul>
 					</div>
