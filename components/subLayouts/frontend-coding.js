@@ -16,7 +16,7 @@ export default function FrontendCoding() {
 				<article className={styles.fecVideoContent}>
 
 					<div className={styles.goToAnotherPageWrapper}>
-						<h2>トップページのCSSとjQueryを利用した挙動</h2>
+						<h2>トップページのCSSとjQueryを利用した技術のモックアップ</h2>
 						
 						<a href="./mockup-site/index.html" target="_blank">
 							<FontAwesomeIcon icon={faWindowRestore} />
