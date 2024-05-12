@@ -43,3 +43,4 @@ ecosystem.config.js
 /my-*
 /pm2*
 /server*
+upgradeNextTo13.md
