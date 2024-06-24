@@ -8,7 +8,7 @@ import FooterEmbed from './subLayouts/footer'
 import { Row, Breadcrumb, BreadcrumbItem, Tab, TabContent } from 'react-bootstrap'
 import { useGlobalContext } from '../context/global'
 
-export default function Layout({ children, home }) {
+export default function Layout() {
 
 	/** Is this needed?
 	if (process.window) {

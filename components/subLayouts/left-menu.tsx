@@ -8,8 +8,8 @@ import { useGlobalContext } from '../../context/global'
 
 export default function LeftMenu() {
 
-	const [ {titleNum, setTitleNum} ] = useGlobalContext()
-
+	const { titleNum, setTitleNum } = useGlobalContext()
+	
 	return (
 		<div className="leftMenu">
 			<div className={styles.leftMenuTitle}>

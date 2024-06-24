@@ -4,7 +4,7 @@ import PHPCoding from './php'
 
 export default function MainContent() {
 
-	const [{ titleNum, setTitleNum }] = useGlobalContext()
+	const { titleNum, setTitleNum } = useGlobalContext()
 
 	switch (titleNum) {
 		case '0': // Frontend Coding

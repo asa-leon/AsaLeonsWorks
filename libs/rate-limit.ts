@@ -8,7 +8,7 @@ const rateLimit = (options) => {
 
 	return {
 		check: (res, limit, token) =>
-			new Promise((resolve, reject) => {
+			new Promise<void>((resolve, reject) => {
 				const tokenCount = tokenCache.get(token) || [0]
 				if (tokenCount[0] === 0) {
 					tokenCache.set(token, tokenCount)

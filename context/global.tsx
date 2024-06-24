@@ -1,6 +1,10 @@
-import { createContext, useState, useContext } from 'react'
+import { createContext, useState, useContext, Dispatch, SetStateAction } from 'react'
 
-const GlobalContext = createContext({})
+const GlobalContext = createContext(
+	{} as {
+		titleNum: string
+		setTitleNum: Dispatch<SetStateAction<string>>
+	})
 
 export function useGlobalContext() {
     return useContext(GlobalContext)
@@ -8,11 +12,7 @@ export function useGlobalContext() {
 
 export function GlobalContextProvider({ children }) {
 
-    const [titleNum, setTitleNum] = useState('0')
-
-    let value = [
-        {titleNum, setTitleNum}
-    ]
+    const [titleNum, setTitleNum] = useState<string>('0')
 
     /* 複数の値を管理する場合は以下の様に記述する
     *
@@ -31,7 +31,7 @@ export function GlobalContextProvider({ children }) {
     */
 
     return (
-        <GlobalContext.Provider value={value}>
+        <GlobalContext.Provider value={{titleNum, setTitleNum}}>
             { children }
         </GlobalContext.Provider>
     )

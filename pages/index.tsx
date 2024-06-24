@@ -6,7 +6,8 @@ import Layout from '../components/layout'
 
 export default function Home() {
 
-	const [response, setResponse] = useState()
+	// Use these below when get some response such as data from an API.
+	const [response, setResponse] = useState<any>()
 
 	const makeRequest = async () => {
 		const res = await fetch('/api/hello')

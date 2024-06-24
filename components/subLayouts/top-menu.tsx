@@ -6,7 +6,7 @@ import { useGlobalContext } from '../../context/global'
 // トップメニューのレイアウトを含むコンポーネント
 export default function TopMenu(props) {
 
-	const [ {titleNum, setTitleNum} ] = useGlobalContext()
+	const { titleNum, setTitleNum } = useGlobalContext()
 
 	return (
 
@@ -16,7 +16,6 @@ export default function TopMenu(props) {
 		onSelect={ (k) => setTitleNum(k)}
 		>
 			<Tab
-				
 				eventKey={'0'} 
 				title="Frontend Coding"
 			>

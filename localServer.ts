@@ -3,7 +3,7 @@ const next = require('next')
 const https = require('https')
 const fs = require('fs')
 
-const port = parseInt(process.env.PORT || '8443')
+const port = parseInt('8444')
 const host = '0.0.0.0'
 const dev = process.env.NODE_ENV !== 'production'
 
@@ -19,16 +19,16 @@ app.prepare().then(async () => {
 
 	// Use https if https option enabled
 	const hasCertificates =
-		fs.existsSync('/etc/certs/192.168.57.2.pem') &&
-		fs.existsSync('/etc/certs/192.168.57.2-key.pem')
+		fs.existsSync('/usr/local/etc/certs/wwwlocal.localhost.pem') &&
+		fs.existsSync('/usr/local/etc/certs/wwwlocal.localhost-key.pem')
 
 	const useHttps =
 		process.env.HTTPS === 'true' && hasCertificates
 
 
 	const options = {
-		key: fs.readFileSync('/etc/certs/192.168.57.2-key.pem'),
-		cert: fs.readFileSync('/etc/certs/192.168.57.2.pem')
+		key: fs.readFileSync('/usr/local/etc/certs/wwwlocal.localhost-key.pem'),
+		cert: fs.readFileSync('/usr/local/etc/certs/wwwlocal.localhost.pem')
 	}
 
 	const server = https.createServer(options, expressApp)
