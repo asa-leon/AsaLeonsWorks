@@ -10,6 +10,7 @@ import { useGlobalContext } from '../context/global'
 
 export default function Layout({ children, home }) {
 
+	/** Is this needed?
 	if (process.window) {
 		const navItems = document.getElementsByClassName('nav-link')
 		console.log(navItems)
@@ -18,8 +19,7 @@ export default function Layout({ children, home }) {
 			console.log('Clicked!')
 		}
 	}
-
-	const [{ titleNum, setTitleNum }] = useGlobalContext()
+	*/
 
 	return (
 		<>

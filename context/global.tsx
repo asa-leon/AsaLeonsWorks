@@ -1,6 +1,6 @@
 import { createContext, useState, useContext } from 'react'
 
-const GlobalContext = createContext()
+const GlobalContext = createContext({})
 
 export function useGlobalContext() {
     return useContext(GlobalContext)
@@ -9,11 +9,9 @@ export function useGlobalContext() {
 export function GlobalContextProvider({ children }) {
 
     const [titleNum, setTitleNum] = useState('0')
-    const [a, setA] = useState('A')
 
     let value = [
-        {titleNum, setTitleNum},
-        {a, setA}
+        {titleNum, setTitleNum}
     ]
 
     /* 複数の値を管理する場合は以下の様に記述する
