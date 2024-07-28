@@ -21,7 +21,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "prodServer.js", "prodServer.js"  ],
   "exclude": [
     "node_modules"
   ]

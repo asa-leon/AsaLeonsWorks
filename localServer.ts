@@ -1,13 +1,13 @@
-const express = require('express')
-const next = require('next')
-const https = require('https')
-const fs = require('fs')
+import express from 'express'
+import next from 'next'
+import https from 'https'
+import fs from 'fs'
 
 const port = parseInt('8444')
-const host = '0.0.0.0'
+const hostname = '0.0.0.0'
 const dev = process.env.NODE_ENV !== 'production'
 
-const app = next({ dev, port, host })
+const app = next({ dev, hostname, port  })
 
 const handle = app.getRequestHandler()
 
@@ -32,7 +32,7 @@ app.prepare().then(async () => {
 	}
 
 	const server = https.createServer(options, expressApp)
-	server.listen(port, host)
+	server.listen(port, hostname)
 
-	console.log(`> Ready on https://${host}:${port}`)
+	console.log(`> Ready on https://${hostname}:${port}`)
 })
