@@ -40,6 +40,7 @@ yarn-error.log*
 /certificates
 ecosystem.config.js
 /*Server.js
+/*Server.ts
 /my-*
 /pm2*
 /server*
