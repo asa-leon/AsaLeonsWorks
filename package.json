@@ -7,7 +7,7 @@
 		"build": "next build",
 		"start": "NODE_ENV=production HTTPS=true node ./server.js",
 		"start-localServer": "NODE_ENV=development node ./localServer.ts",
-		"start-devServer": "NODE_ENV=development node ./devServer.ts",
+		"start-devServer": "NODE_ENV=development node ./devServer.js",
 		"start-prodServer": "NODE_ENV=production node ./prodServer.js",
 		"lint": "next lint"
 	},
@@ -23,7 +23,7 @@
 		"helmet": "^5.1.1",
 		"https": "^1.0.0",
 		"lru-cache": "^7.18.3",
-		"next": "^14.2.3",
+		"next": ">=14.2.35",
 		"react": "^18.3.1",
 		"react-bootstrap": "^1.6.8",
 		"react-dom": "^18.3.1",
@@ -40,7 +40,7 @@
 		"@types/react-dom": "^18.3.0",
 		"eslint": "^7.30.0",
 		"eslint-config-next": "^13.5.6",
-		"typescript": "^5.4.5"
+		"typescript": "^5.7.2"
 	},
 	"overrides": {
 		"json5": ">=1.0.2"
