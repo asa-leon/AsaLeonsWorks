@@ -73,3 +73,66 @@ a {
     background-color: $theme_light_gray;
   }
 }
+
+// スムーズなスクロール挙動の定義
+html, body {
+  scroll-behavior: smooth;
+}
+
+.custom-scrollbar {
+  // スクロール速度の慣性（iOS/Safari用）
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+
+  // スクロールバー全体のスタイル
+  &::-webkit-scrollbar {
+    width: 6px; // 横幅を極細に
+    height: 6px;
+  }
+
+  // スクロールの通り道
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  // 動くパーツ（ツマミ）
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.08); // 背景が薄緑の時は微かな黒
+    border-radius: 10px;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+// ターミナルウィンドウ内（暗い背景）専用のスクロールバー設定
+// 親要素に bg-[#2D2D2D] がある場合に適用
+.terminal-container {
+  .custom-scrollbar {
+    &::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1); // 暗い背景では微かな白
+      
+      &:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}
+
+// コンテンツのフェードイン用ユーティリティ（Framer Motionを使わない場合や併用時）
+.smooth-reveal {
+  animation: reveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
