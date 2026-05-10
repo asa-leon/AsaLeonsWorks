@@ -3,13 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Layout from '../components/layout';
 import { TypingText } from '../components/TypingText';
 import { PORTFOLIO_DATA, MenuItem, ProjectDetail } from '../libs/types';
-import { Montserrat_Subrayada } from 'next/font/google';
-
-const montserratSub = Montserrat_Subrayada({
-  weight: '700',
-  subsets: ['latin'],
-  display: 'swap',
-});
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 export default function Home() {
   const mainRef = useRef<HTMLDivElement>(null);
@@ -75,7 +69,7 @@ export default function Home() {
         `}>
           <div className="flex flex-col gap-8 w-full">
             {/* タイトルサイズを 5xl -> 4xl に微調整して視認性確保 */}
-            <h1 className={`${montserratSub.className} text-4xl font-black leading-[0.85] tracking-tighter uppercase select-none `}>
+            <h1 className={"font-subrayada text-4xl md:text-5xl leading-[0.85] text-slate-800"}>
               HIGA<br />KOSK'S<br />WORKS
             </h1>
 
@@ -130,7 +124,7 @@ export default function Home() {
         {/* --- 右側メインコンテンツ --- */}
         <div className="flex-1 flex flex-col min-w-0 h-screen overflow-hidden">
           <header className="md:hidden flex h-[60px] items-center justify-between p-4 bg-white border-b border-slate-200 shrink-0">
-            <span className={`${montserratSub.className} font-black text-xl leading-[0.85] tracking-tighter uppercase`}>HIGA KOSK'S <br />WORKS</span>
+            <span className={"font-subrayada font-black text-xl leading-[0.85] tracking-tighter uppercase"}>HIGA KOSK'S <br />WORKS</span>
             <button onClick={() => setIsSidebarOpen(true)} className="px-3 py-1 bg-slate-800 text-white text-xs font-bold rounded">MENU</button>
           </header>
 
@@ -174,10 +168,27 @@ export default function Home() {
 
               {/* 中身のコンテナ：flex-1 と overflow-y-auto を消す */}
               <div className="p-4 md:p-8 h-auto custom-scrollbar">
-                <h3 className="text-xl md:text-2xl font-bold mb-8 text-[#4FC3F7] font-mono">
+                <h3 className="text-xl md:text-2xl font-bold mb-2 text-[#4FC3F7] font-mono">
                   &gt; <TypingText text={selectedProject.name} />
                 </h3>
+                {selectedProject.demos?.[0]?.externalLink && (
+                  <a
+                    href={selectedProject.demos[0].externalLink}
+                    target="_blank"
+                    rel="noopener noreferrer" // セキュリティのために追加を推奨
+                    className="inline-flex items-center gap-2 text-sm md:text-xs text-white font-mono opacity-70 hover:opacity-100 transition-opacity decoration-slate-500 underline-offset-4 hover:underline external-link"
+                  >
+                    <span>{selectedProject.demos[0].externalLink}</span>
+                    <FaExternalLinkAlt className="text-[10px] text-[#4FC3F7]" />
+                  </a>
+                )}
 
+                <div className="mb-4">
+                  <p className="text-slate-300 font-mono text-sm leading-relaxed">
+                    <span className="text-green-400">description:</span> {selectedProject.description}
+                  </p>
+                </div>
+                
                 {/* デモセクション：ここが伸びることで外枠も一緒に伸びる */}
                 <div className="space-y-16">
                   {selectedProject.demos?.map((demo, index) => (
@@ -187,6 +198,7 @@ export default function Home() {
                         <h4 className="text-lg md:text-xl font-bold text-white leading-tight">
                           {demo.title}
                         </h4>
+
                       </div>
 
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">

@@ -1,19 +1,38 @@
+/* 1. Tailwind の基本設定 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "variables";
+
+
+/* fonts */
+/* 2. Google Fonts 読み込み（最上部に配置） */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap');
+
+/* 3. 変数定義 */
+$theme_dark_gray: #3A3B3B;
+
+/* フォントを適用するためのクラスを作成 */
+.font-subrayada {
+  font-family: 'Montserrat Subrayada', sans-serif !important;
+  /* Subrayada の良さを引き出すための微調整 */
+  letter-spacing: -0.02em; 
+  text-transform: uppercase;
+}
 
 
 /* bootstrap extends */
 
 body {
-  position: relative;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: $theme_dark_gray; // 統一
   color: #ffffff;
-  text-align: left;
-  background-color: $theme_light_gray;
-  z-index: 0;
+}
+
+/* 6. スムーズスクロールとスクロールバー */
+html, body {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -29,6 +48,13 @@ a {
   &:not([href]), &:not([href]):hover {
     color: inherit;
     text-decoration: none;
+  }
+
+  &.external-link:hover {
+    svg {
+      transform: translate(1px, -1px);
+      transition: transform 0.2s ease;
+    }
   }
 }
 
@@ -80,29 +106,16 @@ html, body {
 }
 
 .custom-scrollbar {
-  // スクロール速度の慣性（iOS/Safari用）
   -webkit-overflow-scrolling: touch;
-  scroll-behavior: smooth;
-
-  // スクロールバー全体のスタイル
   &::-webkit-scrollbar {
-    width: 6px; // 横幅を極細に
+    width: 6px;
     height: 6px;
   }
-
-  // スクロールの通り道
-  &::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  // 動くパーツ（ツマミ）
   &::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.08); // 背景が薄緑の時は微かな黒
+    background: rgba(255, 255, 255, 0.1); // ターミナル背景に合わせて白系に
     border-radius: 10px;
-    transition: background 0.3s ease;
-
     &:hover {
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(255, 255, 255, 0.2);
     }
   }
 }

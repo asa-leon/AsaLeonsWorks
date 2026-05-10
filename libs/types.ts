@@ -22,18 +22,18 @@ export type MenuItem = {
 
 export const PORTFOLIO_DATA: MenuItem[] = [
   {
-    category: "HTML & CSS",
+    category: "Frontedn Coding",
     items: [
       {
         id: "1",
-        name: "Frontend Coding",
-        description: "CSSとjQueryを駆使した技術モックアップの詰め合わせです。",
+        name: "コラムページ",
+        description: "CSSとjQueryを駆使した技術モックアップ",
         // ここからが DemoSection の配列
         demos: [
           {
-            title: "トップページのCSSとjQueryを利用した技術のモックアップ",
+            title: "トップページのCSSとjQueryを利用した動作",
             videoUrl: "/movies/top_page.mov", // public/movies/ に配置
-            externalLink: "https://example.com/mockup1",
+            externalLink: "/mockup-site/index.html",
             features: [
               { tag: "CSS", text: "タイトルのエリアにカーソルが来た時の動作" },
               { tag: "jQuery", text: "ページのトップへ戻る動作" },
@@ -51,12 +51,6 @@ export const PORTFOLIO_DATA: MenuItem[] = [
             ]
           }
         ]
-      },
-      { 
-        id: "2", 
-        name: "Responsive Design", 
-        description: "モバイルファーストなレイアウト設計です。",
-        demos: [] // デモがない場合は空配列、またはオプショナル(?)なら省略可
       }
     ]
   },
@@ -65,17 +59,31 @@ export const PORTFOLIO_DATA: MenuItem[] = [
     items: [
       {
         id: "1",
-        name: "Laravel CMS",
-        description: "フルスタックなWebアプリケーション開発の事例です。",
+        name: "空席照会システム",
+        description: "フルスタックなWebアプリケーション開発の事例です。\n（Laravel Framework使用：バックエンド：PHP、フロントエンド：Vue.js）",
         demos: [
           {
-            title: "管理画面のダッシュボード機能",
-            videoUrl: "/movies/booking_seat_usage.mov",
+            title: "来客数と空席数の比較",
+            videoUrl: "/movies/check_vacancy.mov",
             features: [
-              { tag: "PHP", text: "Eloquent ORMを用いた高速なデータ取得" },
-              { tag: "Blade", text: "コンポーネント化による再利用性の高いUI" }
+              { tag: "PHP", text: "入力された人数と席種に応じて、データベースに登録されている空席の数を比較し、0より下の数になる場合は『×』と表示させ、0以上の場合は『◯』と表示させる。\n最後に『確定』をするとデータベースの値を実際に人数分の数を減算する。" },
             ]
-          }
+          },
+          {
+            title: "入力された数の正誤確認",
+            videoUrl: "/movies/check_number.mov",
+            features: [
+              { tag: "Vue.js", text: "リアル誤った数値（この場合1から50までの数値）が入力された場合に、入力欄の下のメッセージが切り替わる。タイムでの空席状況の更新" },
+            ]
+          },
+          {
+            title: "入力された数の正誤確認",
+            videoUrl: "/movies/check_input_and_selected.mov",
+            features: [
+              { tag: "Vue.js", text: "誤った数値ではなく、席種が一つ以上選択されている場合にのみ、『確認』ボタンが活性化状態になる。" },
+            ]
+          },
+
         ]
       }
     ]
