@@ -53,6 +53,8 @@ module.exports = (phase, { defaultConfig }) => {
 
 	return {
 		/* config options for all phases except development here */
+		output: 'export',
+		
 		reactStrictMode: false,
 
 		// use security headers

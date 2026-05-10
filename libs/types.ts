@@ -22,7 +22,7 @@ export type MenuItem = {
 
 export const PORTFOLIO_DATA: MenuItem[] = [
   {
-    category: "Frontedn Coding",
+    category: "Frontend Coding",
     items: [
       {
         id: "1",
