@@ -65,6 +65,7 @@ export const PORTFOLIO_DATA: MenuItem[] = [
           {
             title: "来客数と空席数の比較",
             videoUrl: "/movies/check_vacancy.mov",
+            externalLink: "https://booking.higa-kosk.works/",
             features: [
               { tag: "PHP", text: "入力された人数と席種に応じて、データベースに登録されている空席の数を比較し、0より下の数になる場合は『×』と表示させ、0以上の場合は『◯』と表示させる。\n最後に『確定』をするとデータベースの値を実際に人数分の数を減算する。" },
             ]
@@ -72,6 +73,7 @@ export const PORTFOLIO_DATA: MenuItem[] = [
           {
             title: "入力された数の正誤確認",
             videoUrl: "/movies/check_number.mov",
+            externalLink: "https://booking.higa-kosk.works/",
             features: [
               { tag: "Vue.js", text: "リアル誤った数値（この場合1から50までの数値）が入力された場合に、入力欄の下のメッセージが切り替わる。タイムでの空席状況の更新" },
             ]
@@ -79,6 +81,7 @@ export const PORTFOLIO_DATA: MenuItem[] = [
           {
             title: "入力された数の正誤確認",
             videoUrl: "/movies/check_input_and_selected.mov",
+            externalLink: "https://booking.higa-kosk.works/",
             features: [
               { tag: "Vue.js", text: "誤った数値ではなく、席種が一つ以上選択されている場合にのみ、『確認』ボタンが活性化状態になる。" },
             ]
